@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex-элементы</title>
+	<link rel="stylesheet" href="assets/css/style.css">	
+<link rel="icon" href="assets/img/internetFAV.png" type="image/x-icon">     <!--Фавикон-->
+	<!--<link rel="stylesheet" href="assets/css/@media.css">	-->
+							<!--подключаем СSS файл-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--подключаем Шрифт-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/scripts.js"></script>-->
+	<script type="text/javascript" src="assets/js/script.js"></script>	
+										<!--подключаем джава файл-->
+	<script src="https://code.jquery.com/jquery-git.min.js"></script>	<!--подключаем библиотеку jsquary-->
+</head>
+<body>
+				<!--Голова сайта-->
+	<header>
+		<!--Логотип для мобильной версии-->
+		<div class="logo1">
+			<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png" alt="logo1"></a>  							<!--Логотип-->
+		</div>
+
+
+		
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png" alt="logo"></a>  							<!--Логотип-->
+		</div>
+		<!--выпадающее меню-->
+<nav>
+	<a id="menu" href="#" class="icon">&#9776;</a>	
+	<ul class="topmenu" id="myTopnav">
+	<li><a href="index.html" >ГЛАВНАЯ</a></li>
+	<li><a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+		<ul class="submenu">
+			<li><a href="Ssilka.html"> 1.Формирование контента и гиперссылки</a></li>
+			<li><a href="GraficaHTML.html">2.Графика в HTML</a></li>
+			<li><a href="Object.html">3.Вставка объектов</a></li>
+			<li><a href="tablCss.html">4.Таблицы стилей</a></li>
+			<li><a href="blochi.html">5.Блочная верстка</a></li>
+			<li><a href="Multimedia.html">6.Элементы мультимедиа</a></li>
+		</ul></li>
+		<li><a href="2.html"class="button">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+			<ul class="submenu">
+				<li><a href="1.OsnPon.html">1.Основные понятия Flex-технологий</a></li>
+				<li><a href="Flex_CONT.html">2.Flex-контейнер</a></li>
+				<li><a href="Flex_justify.html">3.Flex-элементы</a></li>
+				
+				<li><a href="Flex_Order.html">4.Порядок отображения flex-элементов и ориентация</a></li>
+			
+				
+				<li><a href="Flexibility.html">5.Гибкость flex-элементов</a></li>
+				<li><a href="Justify.html">6.Выравнивание</a></li>
+
+					</ul></li>
+					<li><a href="Praktika.html"class="button">ПРАКТИЧЕСКИЕ РАБОТЫ</a>
+					<ul class="submenu2">
+						<li><a href="Lab1.html">Практическая работа №1</a></li>
+						<li><a href="Lab2.html">Практическая работа №2</a></li>
+					<li><a href="Lab3.html">Практическая работа №3</a></li>
+				<li><a href="Lab4.html">Практическая работа №4</a></li>
+			<li><a href="Lab5.html">Практическая работа №5</a></li></ul></li>
+		<li><a href="dopinfo.html"class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+			<ul class="submenu2">
+				<li><a href="HTML.html"class="button">Начало работы с HTML </a></li></li>
+				<li><a href="Color.html"class="button">Цвет в web</a>
+				
+				<li><a href="GIF.html"class="button">FlexBox визуализация через GIF</a></li></ul></li>
+			<li><a href="Contacts.html"class="button">КОНТАКТЫ</a></li>
+			<li><a href="O_kyrse.html"class="button">О КУРСЕ </a></li>
+
+	</ul>
+
+</nav>
+
+	<img src="assets/img/unnamed.jpg" alt="" class="mw-100">
+	<img src="assets/img/unnamedmob.jpg" alt="" class="mw-1001">
+	
+
+	</header>
+
+
+<!--конец Кнопка наверх-->
+																	<!--ОСНОВНАЯ ЧАСТЬ САЙТА-->
+
+	<main>
+		<br>
+		<h3>Flex-элементы</h3>
+
+<p>Одной из причин быстрого роста популярности flexbox среди web-разработчиков было то, что впервые были предоставлены адекватные возможности выравнивания. Он предоставил адекватное вертикальное выравнивание, и стало возможным, наконец, легко поместить элемент в центр по вертикали. В этом руководстве детально рассматривается, как выравнивание и распределение работают во Flexbox.</p>
+
+<p>Для центрирования элемента по перекрёстной оси (в данном случае - вертикальной) используется свойство <h10>align-items</h10>. Для центрирования элемента по главной оси (в данном случае - горизонтально), используется свойство <h10>justify-content</h10>.</p>
+
+<img src="assets/img/Flex_justify1.png" class="Flex_justify" alt="" >
+
+<p>На примере ниже можно изменить размер контейнера или вложенного элемента, но элемент всегда останется по центру.</p>
+<h3>Активное изучение</h3>
+<iframe class="live-sample-frame" frameborder="0" height="1000px" src="assets/img/Flexbox Alignment_ centering a box.html" width="80%"></iframe>
+
+
+<h3>Выравнивание одного элемента при помощи <h10>align-self</h10></h3>
+<p>Свойство <h10>align-items</h10> устанавливает <h10>align-self</h10> для всех flex-элементов как для группы. Это означает, что можно явно указать значение <h10>lign-self</h10> для конкретного элемента. Свойство <h10>align-self</h10> может принимать все те же значения, что и свойство <h10>align-items</h10>, а так же значение auto, которое сбросит значение, установленное в flex-контейнере.</p>
+
+<p>В следующем примере, у flex-контейнера установлено <h10>align-items: flex-start</h10>, означающее, что все элементы будут выравнены по началу перекрёстной оси. У первого элемента с помощью <h10>first-child</h10> селектора установлено <h10>align-items: stretch</h10>; у следующего элемента с классом <h10>selected</h10> установлено <h10>align-self: center</h10>. Можно изменять значение <h10>align-items</h10> на контейнере или <h10>align-self</h10> на элементе для изучения их работы.</p>
+<h3>Активное изучение</h3>
+<iframe class="live-sample-frame" frameborder="0" height="1000px" src="assets/img/Flexbox Alignment_ aligning individual items on the cross axis.html" width="80%"></iframe>
+
+
+<h3>Изменение основной оси</h3>
+<p>До сего момента мы изучали поведение при <h10>flex-direction</h10> установленном в <h10>row</h10>, в языке, использующем написание сверху вниз. Это означает, что основная ось идёт горизонтально, а выравнивание по перекрёстной оси сдвигает элементы вверх или вниз.</p>
+<img src="assets/img/align4.png" class="minimized" alt="" >
+<p>
+	Если изменить <h10>flex-direction</h10> на <h10>column</h10>, <h10>align-items</h10> и <h10>align-self</h10> будут сдвигать элементы влево или вправо.
+</p>
+<img src="assets/img/align5.png" class="minimized" alt="" >
+
+
+<h3>Активное изучение</h3>
+<iframe class="live-sample-frame"  frameborder="0" height="1100px" src="assets/img/Flexbox Alignment_ aligning individual items on the cross axis1.html" width="80%"></iframe>
+
+
+
+
+
+
+
+
+	</main>
+			<!--Подвал сайта-->
+<footer>
+	<nav1>
+				<a href="index.html">ГЛАВНАЯ</a>
+				<a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+					<a href="2.html">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+				
+				
+				<a href="dopinfo.html">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+				<a href="">КОНТАКТЫ</a>
+				<a href="O_kyrse.html">О КУРСЕ</a>
+				
+	</nav1>
+
+	<!--Лого в подвале сайта для мобильной версии-->
+<div class="logofooter">
+		<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png"></a>
+	</div>
+<!-- завершение лого в подвале сайта для мобильной версии-->
+
+	<div class="logofooter">
+		<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png"></a>
+	</div>
+<div class="social">
+	<a href="#"><img src="assets/img/em.png" alt=""></a>
+	<a href="#"><img src="assets/img/face.png" alt=""></a>
+	<a href="#"><img src="assets/img/goo.png" alt=""></a>
+	<a href="#"><img src="assets/img/inst.png" alt=""></a>
+</div>
+
+
+
+ <div class="Copyright">
+ Copyright &copy; Alexey Terletsky 2020  Все права защищены
+ </div>
+</footer>
+
+
+	
+</body>
+
+
+
+
+<!--Кнопка наверх-->
+<div id="upbutton"></div>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 30) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 200);
+    });
+</script>
+
+
+<style>
+  #upbutton {
+    background: url("assets/img/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+<!--конец  Кнопка наверх-->
+
+</html>

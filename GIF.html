@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>FlexBox визуализация через GIF</title>
+	<link rel="stylesheet" href="assets/css/style.css">	
+<link rel="icon" href="assets/img/internetFAV.png" type="image/x-icon">     <!--Фавикон-->
+	<!--<link rel="stylesheet" href="assets/css/@media.css">	-->
+							<!--подключаем СSS файл-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--подключаем Шрифт-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/scripts.js"></script>-->
+	<script type="text/javascript" src="assets/js/script.js"></script>	
+										<!--подключаем джава файл-->
+	<script src="https://code.jquery.com/jquery-git.min.js"></script>	<!--подключаем библиотеку jsquary-->
+</head>
+<body>
+				<!--Голова сайта-->
+	<header>
+		<!--Логотип для мобильной версии-->
+		<div class="logo1">
+			<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png" alt="logo1"></a>  							<!--Логотип-->
+		</div>
+
+
+		
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png" alt="logo"></a>  							<!--Логотип-->
+		</div>
+		<!--выпадающее меню-->
+<nav>
+	<a id="menu" href="#" class="icon">&#9776;</a>	
+	<ul class="topmenu" id="myTopnav">
+	<li><a href="index.html" >ГЛАВНАЯ</a></li>
+	<li><a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+		<ul class="submenu">
+			<li><a href="Ssilka.html"> 1.Формирование контента и гиперссылки</a></li>
+			<li><a href="GraficaHTML.html">2.Графика в HTML</a></li>
+			<li><a href="Object.html">3.Вставка объектов</a></li>
+			<li><a href="tablCss.html">4.Таблицы стилей</a></li>
+			<li><a href="blochi.html">5.Блочная верстка</a></li>
+			<li><a href="Multimedia.html">6.Элементы мультимедиа</a></li>
+		</ul></li>
+		<li><a href="2.html"class="button">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+			<ul class="submenu">
+				<li><a href="1.OsnPon.html">1.Основные понятия Flex-технологий</a></li>
+				<li><a href="Flex_CONT.html">2.Flex-контейнер</a></li>
+				<li><a href="Flex_justify.html">3.Flex-элементы</a></li>
+				
+				<li><a href="Flex_Order.html">4.Порядок отображения flex-элементов и ориентация</a></li>
+			
+				
+				<li><a href="Flexibility.html">5.Гибкость flex-элементов</a></li>
+				<li><a href="Justify.html">6.Выравнивание</a></li>
+
+					</ul></li>
+					<li><a href="Praktika.html"class="button">ПРАКТИЧЕСКИЕ РАБОТЫ</a>
+					<ul class="submenu2">
+						<li><a href="Lab1.html">Практическая работа №1</a></li>
+						<li><a href="Lab2.html">Практическая работа №2</a></li>
+					<li><a href="Lab3.html">Практическая работа №3</a></li>
+				<li><a href="Lab4.html">Практическая работа №4</a></li>
+			<li><a href="Lab5.html">Практическая работа №5</a></li></ul></li>
+		<li><a href="dopinfo.html"class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+			<ul class="submenu2">
+				<li><a href="HTML.html"class="button">Начало работы с HTML </a></li></li>
+				<li><a href="Color.html"class="button">Цвет в web</a>
+				
+				<li><a href="GIF.html"class="button">FlexBox визуализация через GIF</a></li></ul></li>
+			<li><a href="Contacts.html"class="button">КОНТАКТЫ</a></li>
+			<li><a href="O_kyrse.html"class="button">О КУРСЕ </a></li>
+
+	</ul>
+
+</nav>
+
+
+
+	</header>
+
+
+<!--конец Кнопка наверх-->
+													<!--ОСНОВНАЯ ЧАСТЬ САЙТА-->
+
+	<main>
+		<img src="assets/img/unnamed.jpg" alt="" class="mw-100">
+		<img src="assets/img/unnamedmob.jpg" alt="" class="mw-1001">
+		<br>
+		<h3>FlexBox визуализация через GIF</h3>
+		
+		<p>Давайте посмотрим, как работает Flexbox, чтобы мы могли использовать его для создания лучших макетов. Основной принцип Flexbox — сделать макеты гибкими и интуитивно понятными. Для этого контейнеры сами решают, как равномерно распределить их дочерние элементы, включая их размер и расстояние между ними.</p>
+		<br>
+		<p>В этой главе мы рассмотрим 5 самых распространенных свойств Flexbox. Мы рассмотрим, что они делают, как вы можете их использовать и как будут выглядеть их результаты.</p>
+		
+		<h3>Свойство № 1: <h10>Display: Flex</h10></h3>
+		<img src="assets/img/gif/DisplayFlex.gif" class="minimized" alt="клик для увеличения">
+		<p>У вас есть четыре цветных элемента разных размеров, содержащихся в сером элементе контейнера. На данный момент каждый <h10>div</h10> имеет значение по умолчанию <h10>display: block</h10>. Таким образом, каждый квадрат занимает всю ширину своей линии.</p>
+		<p>Чтобы начать работу с Flexbox, вам нужно превратить ваш контейнер в гибкий контейнер . Это так же просто, как:</p>
+		
+		<pre>
+		#container {
+   		display: flex;
+ 		}
+		</pre>
+		<img src="assets/img/gif/DisplayFlex2.gif" class="minimized" alt="клик для увеличения">
+		<p>Немногое изменилось — ваши <h10>div</h10> теперь отображаются как <h10>inline</h10>. Но за кулисами вы сделали что-то мощное. Вы дали своим квадратам нечто, называемое гибким контекстом.</p>
+
+		<p>Теперь вы можете начать размещать их в этом контексте, с гораздо меньшими трудностями, чем традиционный CSS.</p>
+		<h3>Свойство №2: <h10>Flex Direction</h10></h3>
+		<p>У Flexbox контейнера есть две оси: основная ось и пересекающая ось, которые по умолчанию выглядят следующим образом:</p>
+
+			<img src="assets/img/gif/maincros.png" class="minimized" alt="клик для увеличения">
+
+		<p>По умолчанию элементы располагаются вдоль основной оси, слева направо. Вот почему ваши прямоугольники по умолчанию выстроились по горизонтальной линии после того как вы применили свойство <h10> display: flex</h10>. Однако <h10>flex-direction</h10>, позволяет вам вращать основную ось</p>
+		<pre>
+		#container {
+ 		display: flex;
+  		flex-direction: column;
+		}
+		</pre>
+		<img src="assets/img/gif/DisplayFlex3.gif" class="minimized" alt="клик для увеличения" >
+		<p>Есть одно важное различие, которое следует здесь упомянуть:
+			<br>
+			<h10> flex-direction:column</h10> не выравнивает прямоугольники по пересекающей оси вместо основной. Он поворачивает саму основную ось из горизонтального положения в вертикальное.</p>
+		
+		<h3>Свойство №3: <h10>Justify Content</h10></h3>
+		<p>
+			<h10>Justify-content</h10> управляет выравниванием элементов на основной оси.
+
+		Здесь мы немного углубимся в различия между основной и пересекающей осью. Во-первых, давайте вернёмся к 
+		<h10>flex-direction: row</h10>.
+		</p>
+		<pre>
+		#container {
+  		display: flex;
+  		flex-direction: row;
+  		justify-content: flex-start;
+		}
+		</pre>
+		<p>
+		В вашем распоряжении есть пять команд для использования их в <h10>justify-content:</h10>
+		</p>
+	<ul >
+		<li>flex-start</li>
+		<li>flex-end</li>
+		<li>center</li>
+		<li>space-between</li>
+		<li>space-around</li>
+	</ul>
+
+	<img src="assets/img/gif/DisplayFlex4.gif" class="minimized" alt="клик для увеличения" >
+	<p><h10>Space-around</h10> и <h10>pace-between</h10> наименее интуитивны. <h10>Space-between</h10> делает равное расстояние между прямоугольниками, но не между прямоугольниками и контейнером.
+
+	<h10>Space-around</h10> делает одинаковое расстояние с каждой стороны прямоугольника - что собственно означает, что пространство между крайними прямоугольниками и контейнером вдвое меньше, чем между двумя прямоугольниками (каждый из прямоугольников привносит равный, не пересекающийся отступ, что собственно удваивает расстояние).
+
+	Заключительное замечание: запомните, что <h10>justify-content</h10> работает вдоль основной оси а  <h10>flex-direction</h10> переключает основную ось.</p>
+
+	<h3>Свойство №4: <h10>Align Items</h10></h3>
+	<p>
+		Если вы освоили <h10>justify-content</h10>, то <h10>align-items</h10> покажется вам лёгким ветерком.
+
+	Как <h10>justify-content</h10> работает вдоль основной оси, так <h10>align-items</h10> применяется к пересекающей оси.
+
+	</p>
+	<img src="assets/img/gif/maincros.png" class="minimized" alt="клик для увеличения">
+	<p>Давайте сбросим наш <h10>flex-direction</h10> на row, чтобы наши оси выглядели как на рисунке выше.
+
+	А теперь, углубимся в команды <h10>align-items</h10>.</p>
+	<ul>
+	<li>flex-start</li>
+	<li>flex-end</li>
+	<li>center</li>
+	<li>stretch</li>
+	<li>baseline</li>
+	</ul>
+
+	<p>Первые три работают точно также как и в <h10>justify-content</h10>, поэтому здесь нет ничего особенного.
+
+	Однако, следующие два немного отличаются.
+
+	Есть <h10>stretch</h10>, при котором элементы занимают всю полноту пересекающей оси и <h10>baseline</h10>, при котором они выравниваются в нижней части тегов параграфа.</p>
+
+	<img src="assets/img/gif/DisplayFlex5.gif" class="minimized" alt="клик для увеличения" >
+	<p>
+	(Обратите внимание что для <h10>align-items: stretch</h10> я должен был установить значение высоты прямоугольников на <h10>auto</h10>. В противном случае свойство <h10>height</h10> будет переопределять<h10>stretch</h10>.)
+
+	Для <h10>baseline</h10> следует помнить, что если вы убираете теги параграфа, он выровняет нижнюю часть прямоугольников, например так:
+	</p>
+	<img src="assets/img/gif/basseline.png" class="minimized" alt="клик для увеличения">
+	<p>
+		Для того чтобы лучше продемонстрировать основную и пересекающую оси, давайте совместим свойства <h10>justify-content</h10> и <h10>align-items</h10>, и посмотрим как работает различное центрирование для двух <h10>flex-direction </h10>команд:
+	</p>
+
+	<img src="assets/img/gif/DisplayFlex6.gif" class="minimized" alt="клик для увеличения" >
+
+	<p>С <h10>row</h10> прямоугольники выстраиваются вдоль горизонтальной основной оси. С <h10>column</h10> они опускаются вдоль вертикальной основной оси.
+
+	Даже если прямоугольники расположены по центру в обоих случаях (как по вертикали, так и по горизонтали), они не являются взаимозаменяемыми!</p>
+
+
+	<h3>Свойство №5: <h10>Align Self</h10></h3>
+	<p>Align-self позволяет вам вручную управлять выравниванием одного конкретного элемента.
+
+	В основном, он переопределяет свойство <h10>align-items</h10> для одного прямоугольника. Все возможные значения точно такие же как <h10>align-items</h10>, хотя по умолчанию стоит <h10>auto</h10>, который наследуется от свойства <h10>align-items</h10> контейнера.</p>
+	<pre>
+	#container {
+	 align-items: flex-start;
+	}
+	.square#one {
+	 align-self: center;
+	}
+	// Only this square will be centered.
+	</pre>
+	<p>Давайте посмотрим на то как это выглядит. Применим <h10>align-self</h10> двум прямоугольникам, а для остальных поставим <h10>align-items: center</h10> и <h10>flex-direction: row</h10>.</p>
+
+	<img src="assets/img/gif/DisplayFlex7.gif" class="minimized" alt="клик для увеличения" >
+
+	<h3>Заключение</h3>
+	<p>Несмотря на то, что мы только поцарапали поверхность Flexbox, этих команд должно быть достаточно для обработки большинства основных выравниваний и вертикального расположения элементов вашего содержимого.</p>
+
+	</p>
+
+
+	<br>
+		
+</main>
+			<!--Подвал сайта-->
+<footer>
+	<nav1>
+				<a href="index.html">ГЛАВНАЯ</a>
+				<a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+				<a href="2.html">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+				
+				
+				<a href="dopinfo.html">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+				<a href="">КОНТАКТЫ</a>
+				<a href="O_kyrse.html">О КУРСЕ</a>
+				
+	</nav1>
+
+	<!--Лого в подвале сайта для мобильной версии-->
+<div class="logofooter">
+		<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png"></a>
+	</div>
+<!-- завершение лого в подвале сайта для мобильной версии-->
+
+	<div class="logofooter">
+		<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png"></a>
+	</div>
+<div class="social">
+	<a href="#"><img src="assets/img/em.png" alt=""></a>
+	<a href="#"><img src="assets/img/face.png" alt=""></a>
+	<a href="#"><img src="assets/img/goo.png" alt=""></a>
+	<a href="#"><img src="assets/img/inst.png" alt=""></a>
+</div>
+
+ <div class="Copyright">
+ Copyright &copy; Alexey Terletsky 2020  Все права защищены
+ </div>
+</footer>
+
+
+	
+</body>
+
+
+
+
+<!--Кнопка наверх-->
+<div id="upbutton"></div>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 30) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 200);
+    });
+</script>
+
+
+<style>
+  #upbutton {
+    background: url("assets/img/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+<!--конец  Кнопка наверх-->
+
+</html>

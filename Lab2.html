@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Практическая работа №2</title>
+  <link rel="stylesheet" href="assets/css/style.css"> 
+<link rel="icon" href="assets/img/internetFAV.png" type="image/x-icon">     <!--Фавикон-->
+  <!--<link rel="stylesheet" href="assets/css/@media.css">  -->
+              <!--подключаем СSS файл-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--подключаем Шрифт-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/scripts.js"></script>-->
+  <script type="text/javascript" src="assets/js/script.js"></script>  
+                    <!--подключаем джава файл-->
+  <script src="https://code.jquery.com/jquery-git.min.js"></script> <!--подключаем библиотеку jsquary-->
+</head>
+<body>
+        <!--Голова сайта-->
+  <header>
+    <!--Логотип для мобильной версии-->
+    <div class="logo1">
+      <a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png" alt="logo1"></a>                <!--Логотип-->
+    </div>
+
+
+    
+    <div class="logo">
+      <a href="index.html"><img class="graficlogo" src="assets/img/internet1.png" alt="logo"></a>               <!--Логотип-->
+    </div>
+    <!--выпадающее меню-->
+<nav>
+  <a id="menu" href="#" class="icon">&#9776;</a>  
+  <ul class="topmenu" id="myTopnav">
+  <li><a href="index.html" >ГЛАВНАЯ</a></li>
+  <li><a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+    <ul class="submenu">
+      <li><a href="Ssilka.html"> 1.Формирование контента и гиперссылки</a></li>
+      <li><a href="GraficaHTML.html">2.Графика в HTML</a></li>
+      <li><a href="Object.html">3.Вставка объектов</a></li>
+      <li><a href="tablCss.html">4.Таблицы стилей</a></li>
+      <li><a href="blochi.html">5.Блочная верстка</a></li>
+      <li><a href="Multimedia.html">6.Элементы мультимедиа</a></li>
+    </ul></li>
+    <li><a href="2.html"class="button">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+      <ul class="submenu">
+        <li><a href="1.OsnPon.html">1.Основные понятия Flex-технологий</a></li>
+        <li><a href="Flex_CONT.html">2.Flex-контейнер</a></li>
+        <li><a href="Flex_justify.html">3.Flex-элементы</a></li>
+        
+        <li><a href="Flex_Order.html">4.Порядок отображения flex-элементов и ориентация</a></li>
+      
+        
+        <li><a href="Flexibility.html">5.Гибкость flex-элементов</a></li>
+        <li><a href="Justify.html">6.Выравнивание</a></li>
+
+          </ul></li>
+          <li><a href="Praktika.html"class="button">ПРАКТИЧЕСКИЕ РАБОТЫ</a>
+          <ul class="submenu2">
+            <li><a href="Lab1.html">Практическая работа №1</a></li>
+            <li><a href="Lab2.html">Практическая работа №2</a></li>
+          <li><a href="Lab3.html">Практическая работа №3</a></li>
+        <li><a href="Lab4.html">Практическая работа №4</a></li>
+      <li><a href="Lab5.html">Практическая работа №5</a></li></ul></li>
+    <li><a href="dopinfo.html"class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+      <ul class="submenu2">
+        <li><a href="HTML.html"class="button">Начало работы с HTML </a></li></li>
+        <li><a href="Color.html"class="button">Цвет в web</a>
+       
+        <li><a href="GIF.html"class="button">FlexBox визуализация через GIF</a></li></ul></li>
+      <li><a href="Contacts.html"class="button">КОНТАКТЫ</a></li>
+      <li><a href="O_kyrse.html"class="button">О КУРСЕ </a></li>
+
+  </ul>
+
+</nav>
+
+<!--<hr align="center" width=100% size="2" color="#1e4c96" />         Черта отделяющая меню от части сайта-->
+  
+
+  </header>
+
+
+
+                                  <!--ОСНОВНАЯ ЧАСТЬ САЙТА-->
+
+  <main>
+    <img src="assets/img/unnamed.jpg" alt="" class="mw-100">
+    <img src="assets/img/unnamedmob.jpg" alt="" class="mw-1001">
+    
+
+<h3>Практическая работа №2</h3>
+<h22>Добавление элементов HTML-документ</h22>
+<p>Если вы хотите поэкспериментировать с написанием HTML на  компьютере, то можете:
+Скопировать пример HTML-страницы, расположенный ниже.</p>
+<pre>
+  &lt!DOCTYPE html>
+&lthtml>
+  &lthead>
+    &ltmeta charset="utf-8">
+    &lttitle>Тестовая страница&lt/title>
+  &lt/head>
+  &ltbody>
+    &ltp>Это — моя страница&lt/p>
+  &lt/body>
+&lt/html>
+</pre>
+
+<p>Создать новый файл в текстовом редакторе.
+Вставить код в ваш новый текстовый файл.
+Сохранить файл как index.html.
+
+Для этого упражнения вы можете редактировать код локально на своём компьютере, как предлагается выше, а можете работать в редакторе, расположенном ниже. В редакторе показано только содержимое элемента <h10>&ltbody></h10>. Попробуйте сделать следующее:
+<ul>
+<li>Добавьте заголовок страницы сразу за открывающим тегом <h10>&ltbody></h10>. Текст должен находиться между открывающим тегом <h10>&lth1></h10> и закрывающим <h10>&lt/h1></h10> .
+<li>Напишите в параграфе о чём-нибудь, что кажется вам интересным.</li>
+<li>Выделите важные слова, обернув их в открывающий тег <h10>&ltstrong></h10> и закрывающий <h10>&lt/strong></h10></li>
+<li>Добавьте ссылку на свой абзац так, как объяснено ранее в статье.</li>
+<li>Добавьте изображение в свой документ под абзацем, как объяснено ранее в статье. Если сможете использовать другую картинку (со своего компьютера или из интернета). Вы большой молодец!</li>
+</ul>
+</p>
+
+<h3>Результат</h3>
+<div class="output" style="min-height: 50px; margin: 5px 260px 20px;">  <p>Это — моя страница</p>
+</div>
+<h3>Редактируемый код</h3>
+<p class="a11y-label">Нажмите Esc, чтобы выйти из области кода (Tab вставляет символ табуляции).</p>
+<textarea id="code" class="input" style="min-height: 400px;width: 80%;margin:5px 260px 20px;">  &lt;p&gt;Это — моя страница&lt;/p&gt;
+</textarea>
+<div class="controls">
+  <input id="reset" type="button" value="Сбросить">
+  <input id="solution" type="button" value="Показать решение">
+</div>
+
+
+<script>
+var textarea = document.getElementById('code');   //возвращает ссылку на элемент по его идентификатору
+var reset = document.getElementById('reset');
+var solution = document.getElementById('solution');
+var output = document.querySelector('.output');
+var code = textarea.value;
+var userEntry = textarea.value;
+
+function updateCode() {
+  output.innerHTML = textarea.value;
+}
+
+reset.addEventListener('click', function() {
+  textarea.value = code;
+  userEntry = textarea.value;
+  solutionEntry = htmlSolution;
+  solution.value = 'Показать решение';
+  updateCode();
+});
+
+solution.addEventListener('click', function() {
+  if(solution.value === 'Показать решение') {
+    textarea.value = solutionEntry;
+    solution.value = 'Спрятать решение';
+  } else {
+    textarea.value = userEntry;
+    solution.value = 'Показать решение';
+  }
+  updateCode();
+});
+
+var htmlSolution = '<p>Мне очень нравится читать научно-популярную литературу.<strong>Один из известнейших ученых - Стивен Хокинг</strong>. Его «Краткая история времени» стала поворотным пунктом в мире научно-популярных текстов, продемонстрировав теорию космологии таким образом, что ее смог понять практически любой человек. <a href="https://ru.wikipedia.org/wiki/Хокинг,_Стивен" title="Stephen William Hawking Wikipedia.">"Stephen William Hawking"</a>.\ Одна из первых его книг — «Краткая история времени» <a href="https://upload.wikimedia.org/wikipedia/ru/c/c2/A_Brief_History_of_Time%28rus%29.jpg"</a>.</p>\ <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Stephen_Hawking.StarChild.jpg/220px-Stephen_Hawking.StarChild.jpg">';
+var solutionEntry = htmlSolution;
+
+textarea.addEventListener('input', updateCode);
+window.addEventListener('load', updateCode);
+
+
+
+textarea.onkeydown = function(e){
+  if (e.keyCode === 9) {
+    e.preventDefault();
+    insertAtCaret('\t');
+  }
+
+  if (e.keyCode === 27) {
+    textarea.blur();
+  }
+};
+
+function insertAtCaret(text) {
+  var scrollPos = textarea.scrollTop;
+  var caretPos = textarea.selectionStart;
+
+  var front = (textarea.value).substring(0, caretPos);
+  var back = (textarea.value).substring(textarea.selectionEnd, textarea.value.length);
+  textarea.value = front + text + back;
+  caretPos = caretPos + text.length;
+  textarea.selectionStart = caretPos;
+  textarea.selectionEnd = caretPos;
+  textarea.focus();
+  textarea.scrollTop = scrollPos;
+}
+
+// Обновлять сохраненный код, когда пользователь обновляет код в textarea
+
+textarea.onkeyup = function(){
+  
+  if(solution.value === 'Показать решение') {
+    userEntry = textarea.value;
+  } else {
+    solutionEntry = textarea.value;
+  }
+
+  updateCode();
+};
+            </script>
+
+
+
+
+
+<!-- &lt ДЛЯ ОТОБРАЖЕНИЯ ТЕГОВ  -->
+    
+  </main>
+      <!--Подвал сайта-->
+<footer>
+  <nav1>
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+          <a href="2.html">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+        
+        
+        <a href="dopinfo.html">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+        <a href="">КОНТАКТЫ</a>
+        <a href="O_kyrse.html">О КУРСЕ</a>
+        
+  </nav1>
+
+  <!--Лого в подвале сайта для мобильной версии-->
+<div class="logofooter">
+    <a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png"></a>
+  </div>
+<!-- завершение лого в подвале сайта для мобильной версии-->
+
+  <div class="logofooter">
+    <a href="index.html"><img class="graficlogo" src="assets/img/internet1.png"></a>
+  </div>
+<div class="social">
+  <a href="#"><img src="assets/img/em.png" alt=""></a>
+  <a href="#"><img src="assets/img/face.png" alt=""></a>
+  <a href="#"><img src="assets/img/goo.png" alt=""></a>
+  <a href="#"><img src="assets/img/inst.png" alt=""></a>
+</div>
+
+
+ <div class="Copyright">
+ Copyright &copy; Alexey Terletsky 2020  Все права защищены
+ </div>
+</footer>
+
+
+  
+</body>
+
+
+
+
+<!--Кнопка наверх-->
+<div id="upbutton"></div>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 30) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 200);
+    });
+</script>
+
+
+<style>
+  #upbutton {
+    background: url("assets/img/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+<!--конец  Кнопка наверх-->
+
+</html>

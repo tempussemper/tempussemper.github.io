@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Формирование контента и гиперссылки.</title>
+	<link rel="stylesheet" href="assets/css/style.css">	
+	<link rel="icon" href="assets/img/internetFAV.png" type="image/x-icon">     <!--Фавикон-->
+
+	<!--<link rel="stylesheet" href="assets/css/@media.css">	-->
+							<!--подключаем СSS файл-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--подключаем Шрифт-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/scripts.js"></script>-->
+	<script type="text/javascript" src="assets/js/script.js"></script>	
+										<!--подключаем джава файл-->
+	<script src="https://code.jquery.com/jquery-git.min.js"></script>	<!--подключаем библиотеку jsquary-->
+</head>
+<body>
+				<!--Голова сайта-->
+	<header>
+		<!--Логотип для мобильной версии-->
+		<div class="logo1">
+			<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png" alt="logo1"></a>  							<!--Логотип-->
+		</div>
+
+
+		
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png" alt="logo"></a>  							<!--Логотип-->
+		</div>
+		<!--выпадающее меню-->
+<nav>
+	<a id="menu" href="#" class="icon">&#9776;</a>	
+	<ul class="topmenu" id="myTopnav">
+	<li><a href="index.html" >ГЛАВНАЯ</a></li>
+	<li><a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+		<ul class="submenu">
+			<li><a href="Ssilka.html"> 1.Формирование контента и гиперссылки</a></li>
+			<li><a href="GraficaHTML.html">2.Графика в HTML</a></li>
+			<li><a href="Object.html">3.Вставка объектов</a></li>
+			<li><a href="tablCss.html">4.Таблицы стилей</a></li>
+			<li><a href="blochi.html">5.Блочная верстка</a></li>
+			<li><a href="Multimedia.html">6.Элементы мультимедиа</a></li>
+		</ul></li>
+		<li><a href="2.html"class="button">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+			<ul class="submenu">
+				<li><a href="1.OsnPon.html">1.Основные понятия Flex-технологий</a></li>
+				<li><a href="Flex_CONT.html">2.Flex-контейнер</a></li>
+				<li><a href="Flex_justify.html">3.Flex-элементы</a></li>
+				
+				<li><a href="Flex_Order.html">4.Порядок отображения flex-элементов и ориентация</a></li>
+			
+				
+				<li><a href="Flexibility.html">5.Гибкость flex-элементов</a></li>
+				<li><a href="Justify.html">6.Выравнивание</a></li>
+					</ul></li>
+					<li><a href="Praktika.html"class="button">ПРАКТИЧЕСКИЕ РАБОТЫ</a>
+					<ul class="submenu2">
+						<li><a href="Lab1.html">Практическая работа №1</a></li>
+						<li><a href="Lab2.html">Практическая работа №2</a></li>
+					<li><a href="Lab3.html">Практическая работа №3</a></li>
+				<li><a href="Lab4.html">Практическая работа №4</a></li>
+			<li><a href="Lab5.html">Практическая работа №5</a></li></ul></li>
+		<li><a href="dopinfo.html"class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+			<ul class="submenu2">
+				<li><a href="HTML.html"class="button">Начало работы с HTML </a></li></li>
+				<li><a href="Color.html"class="button">Цвет в web</a>
+				
+				<li><a href="GIF.html"class="button">FlexBox визуализация через GIF</a></li></ul></li>
+			<li><a href="Contacts.html"class="button">КОНТАКТЫ</a></li>
+			<li><a href="O_kyrse.html"class="button">О КУРСЕ </a></li>
+
+	</ul>
+
+</nav>
+
+<!--<hr align="center" width=100% size="2" color="#1e4c96" />					Черта отделяющая меню от части сайта-->
+	
+
+	</header>
+
+
+<!--конец Кнопка наверх-->
+																	<!--ОСНОВНАЯ ЧАСТЬ САЙТА-->
+
+	<main>
+		<img src="assets/img/unnamed.jpg" alt="" class="mw-100">
+		<img src="assets/img/unnamedmob.jpg" alt="" class="mw-1001">
+		
+
+	<h3>Блочная верстка</h3>
+	<p>
+		Раньше на просторах Интернета был широко распространён табличный тип вёрстки, однако со временем этот подход к созданию структуры сайта устарел и на смену ему пришла блочная вёрстка.
+	</p>
+<h3>Суть блочной вёрстки</h3>
+<p>В графическом редакторе создаётся макет сайта: размечается, где какая область страницы ("чердак", "подвал", боковая панель, основной контент) будет находиться и сколько места занимать, готовятся картинки, фоны.</p>
+
+<p>Каждая часть страницы помещается в свой блок <h10>&ltdiv></h10>: верх сайта — в первый, меню — во второй, контент — в третий и т. д. Каждый блок наполняется содержимым средствами HTML, а также позиционируется и оформляется с помощью CSS-разметки.</p>
+
+<p>Конечный HTML-документ представляет собой набор блоков <h10>&ltdiv></h10> с контентом внутри. Оформление зачастую находится в отдельном CSS-файле, подключенном к странице тегом <h10>&ltlink></h10>, или как минимум в контейнере <h10>&ltstyle></h10> секции <h10>&lthead></h10>.</p>
+
+<h3>Отличия блочной вёрстки от табличной</h3>
+
+<p>Если табличная вёрстка подразумевает, что содержимое страницы находятся внутри тега<h10>&lttable></h10>, то концепция блочной вёрстки основана на активном использовании универсальных тегов <h10>&ltdiv></h10>, внутрь которых помещается содержимое, включая другие теги.</p>
+
+<p>Блочная вёрстка лишена недостатков табличной — поисковыми системами она индексируется лучше, её код не такой развесистый, да и блоки <h10>&ltdiv></h10>, которые так любят называть «слоями», изначально задумывались универсальными, то есть «для всего», тогда как <h10>&lttable></h10> — это таблица, которую нужно использовать для отображения табличных данных и не более того.</p>
+
+<p>Единственный ощутимый минус блочной вёрстки — сделанные на ней сайты могут по-разному отображаться в обозревателях. Чтобы этого избежать, нужно делать вёрстку «кроссбраузерной», то есть одинаково отображаемой любым обозревателем.</p>
+
+<h3>Принципы блочной вёрстки</h3>
+
+<p>Первый — конечно же, повсеместное использование тега <h10>&ltdiv></h10>, который можно назвать базовым элементом блочной структуры, но об этом было сказано уже достаточно много.</p>
+
+<p>Второе правило — принцип разделения кода, согласно которому содержимое от оформления нужно отделять. Говоря проще и ближе к нашему случаю: HTML — отдельно, CSS — отдельно (желательно в разные файлы). Такой подход делает структуру понятней. Программисту не нужно открывать CSS, дизайнеру — HTML.</p>
+
+<p>Третий принцип — таблицы нужно использовать не везде, а по необходимости, при этом полностью отказываться от них так же странно, как и применять не к месту.</p>
+
+<h3>Пример блочной вёрстки</h3>
+
+<p>Итак, у нас есть макет (рисунок ниже). Условный, конечно, просто разметка, ведь цель примера — как можно наглядней объяснить принцип создания блочной вёрстки(попробовать себя в блочной верстке можно будет в практической работе №5). Зная базу, навести красоту и усложнить макет вы сможете и сами.</p>
+
+	<img src="assets/img/Blochi1.jpg" class="minimized" alt="клик для увеличения">
+
+<p>
+	Согласно макету, страница сайта будет содержать пять блоков: «чердак», навигационное меню, боковую панель, основной блок с контентом и «подвал».
+</p>
+<p>
+	Сначала создадим HTML-страницу: обозначим структуру, разметим её. HTML-код будет таким:
+</p>
+
+<pre>
+	&lt!DOCTYPE html>
+&lthtml>
+&lthead>
+    &lttitle>Блочная вёрстка&lt/title>
+&ltlink rel="stylesheet" type="text/css" href="style.css">
+&lt/head>
+&ltbody>
+&ltdiv id="container">
+	&ltdiv id="header">
+	&lth2>header ("чердак" сайта)&lt/h2>
+	&lt/div>
+		 
+	&ltdiv id="navigation">
+	&lth2>Блок навигации/h2>
+	&lt/div>
+		 
+	&ltdiv id="sidebar">
+	&lth2>Левая панель&lt/h2>
+	&lt/div>
+		 
+	&ltdiv id="content">
+	&lth2>Основной контент страницы&lt/h2>
+	&lt/div>
+		 
+	&ltdiv id="clear">
+		 
+	&lt/div>
+							   
+	&ltdiv id="footer">
+	&lth2>footer ("подвал" сайта)&lt/h2>
+	&lt/div>
+&lt/div>
+&lt/body>
+&lt/html>
+</pre>
+
+
+<p><h10>&ltdiv id="container"></h10> — это блок-родитель, внутри которого расположились все остальные блоки. Как ячейки таблицы внутри <h10>&lttable></h10>. Назначение дочерних контейнеров должно быть понятно, за исключением разве что блока <h10>&ltdiv id="clear"></h10>.</p>
+
+<p>Если открыть HTML-файл в браузере, не подключая таблицу стилей, страница будет выглядеть так.</p>
+
+<!--<iframe class="primer" src="primer.html"></iframe>-->
+
+ <h3>Результат отображения браузером</h3>
+<div class="qwer">
+<img src="assets/img/Blochi2.jpg" class="minimized12" alt="клик для увеличения"></div>
+
+<p>Теперь добавим файл CSS, код которого приведён ниже.</p>
+<pre>
+	
+body {
+     background: #FFF;
+     color: #000;
+     font-family: Arial, sans-serif;
+     font-size: 14px;
+}
+
+.header {
+     background: #F5DEB3;
+     width: 100%;
+     height: 55px;
+}
+ 
+.container {
+     background: #FFD700;
+     margin: auto auto;
+     text-align: center;
+     width: 80%;
+     height: 400px;
+}
+ 
+.navigation {
+     background: #FE9798;
+     width: 100%;
+     height: 25px;
+}
+ 
+.sidebar {
+     background: #40E0D0;
+     float: left;
+     width: 20%;
+     height: 280px;
+}
+
+.content {
+     background: #DCDCDC;
+     float: right;
+     width: 80%;
+     height: 280px;
+}
+ 
+.clear {
+     clear: both;
+}
+ 
+.footer {
+    background: #00BFFF;
+	width: 100%;
+	height: 40px;
+}
+</pre>
+
+
+<p>
+С помощью стилей мы последовательно оформляем содержимое тега <h10>&ltbody></h10> и всех находящихся внутри контейнеров с помощью ранее изученных правил.
+
+<h10>#clear{clear:both;}</h10> запрещает обтекание элемента слева и справа. Если убрать это правило, вёрстка «поедет» и низ сайта перестанет корректно отображаться.</p>
+
+<p>CSS творит чудеса, и с ним наша HTML-страница примет уже совсем другой вид.
+</p>
+<h3>Результат отображения браузером</h3>
+<div class="qwer">
+<img src="assets/img/Blochi3.jpg" class="minimized12" alt="клик для увеличения"></div>
+
+<p>
+	Вот и весь смысл блочной структуры. Дальше можно только наполнять сайт содержимым и усложнять оформление, но делаться это будет всё равно по изложенному выше принципу.
+</p>
+
+
+<!-- &lt ДЛЯ ОТОБРАЖЕНИЯ ТЕГОВ  -->
+		
+	</main>
+			<!--Подвал сайта-->
+<footer>
+	<nav1>
+				<a href="index.html">ГЛАВНАЯ</a>
+				<a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+					<a href="2.html">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+				
+				
+				<a href="dopinfo.html">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+				<a href="Contacts.html">КОНТАКТЫ</a>
+				<a href="O_kyrse.html">О КУРСЕ</a>
+				
+	</nav1>
+
+	<!--Лого в подвале сайта для мобильной версии-->
+<div class="logofooter">
+		<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png"></a>
+	</div>
+<!-- завершение лого в подвале сайта для мобильной версии-->
+
+	<div class="logofooter">
+		<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png"></a>
+	</div>
+<div class="social">
+	<a href="#"><img src="assets/img/em.png" alt=""></a>
+	<a href="#"><img src="assets/img/face.png" alt=""></a>
+	<a href="#"><img src="assets/img/goo.png" alt=""></a>
+	<a href="#"><img src="assets/img/inst.png" alt=""></a>
+</div>
+
+ <div class="Copyright">
+ Copyright &copy; Alexey Terletsky 2020  Все права защищены
+ </div>
+
+
+ 
+</footer>
+
+
+	
+</body>
+
+
+
+
+<!--Кнопка наверх-->
+<div id="upbutton"></div>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 30) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 200);
+    });
+</script>
+
+
+<style>
+  #upbutton {
+    background: url("assets/img/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+<!--конец  Кнопка наверх-->
+
+</html>

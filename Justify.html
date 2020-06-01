@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Выравнивание</title>
+	<link rel="stylesheet" href="assets/css/style.css">	
+	<link rel="icon" href="assets/img/internetFAV.png" type="image/x-icon">     <!--Фавикон-->
+
+	<!--<link rel="stylesheet" href="assets/css/@media.css">	-->
+							<!--подключаем СSS файл-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--подключаем Шрифт-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/scripts.js"></script>-->
+	<script type="text/javascript" src="assets/js/script.js"></script>	
+										<!--подключаем джава файл-->
+	<script src="https://code.jquery.com/jquery-git.min.js"></script>	<!--подключаем библиотеку jsquary-->
+</head>
+<body>
+				<!--Голова сайта-->
+	<header>
+		<!--Логотип для мобильной версии-->
+		<div class="logo1">
+			<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png" alt="logo1"></a>  							<!--Логотип-->
+		</div>
+
+
+		
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png" alt="logo"></a>  							<!--Логотип-->
+		</div>
+		<!--выпадающее меню-->
+<nav>
+	<a id="menu" href="#" class="icon">&#9776;</a>	
+	<ul class="topmenu" id="myTopnav">
+	<li><a href="index.html" >ГЛАВНАЯ</a></li>
+	<li><a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+		<ul class="submenu">
+			<li><a href="Ssilka.html"> 1.Формирование контента и гиперссылки</a></li>
+			<li><a href="GraficaHTML.html">2.Графика в HTML</a></li>
+			<li><a href="Object.html">3.Вставка объектов</a></li>
+			<li><a href="tablCss.html">4.Таблицы стилей</a></li>
+			<li><a href="blochi.html">5.Блочная верстка</a></li>
+			<li><a href="Multimedia.html">6.Элементы мультимедиа</a></li>
+		</ul></li>
+		<li><a href="2.html"class="button">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+			<ul class="submenu">
+				<li><a href="1.OsnPon.html">1.Основные понятия Flex-технологий</a></li>
+				<li><a href="Flex_CONT.html">2.Flex-контейнер</a></li>
+				<li><a href="Flex_justify.html">3.Flex-элементы</a></li>
+				
+				<li><a href="Flex_Order.html">4.Порядок отображения flex-элементов и ориентация</a></li>
+			
+				
+				<li><a href="Flexibility.html">5.Гибкость flex-элементов</a></li>
+				<li><a href="Justify.html">6.Выравнивание</a></li>
+
+					</ul></li>
+					<li><a href="Praktika.html"class="button">ПРАКТИЧЕСКИЕ РАБОТЫ</a>
+					<ul class="submenu2">
+						<li><a href="Lab1.html">Практическая работа №1</a></li>
+						<li><a href="Lab2.html">Практическая работа №2</a></li>
+					<li><a href="Lab3.html">Практическая работа №3</a></li>
+				<li><a href="Lab4.html">Практическая работа №4</a></li>
+			<li><a href="Lab5.html">Практическая работа №5</a></li></ul></li>
+		<li><a href="dopinfo.html"class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+			<ul class="submenu2">
+				<li><a href="HTML.html"class="button">Начало работы с HTML </a></li></li>
+				<li><a href="Color.html"class="button">Цвет в web</a>
+				
+				<li><a href="GIF.html"class="button">FlexBox визуализация через GIF</a></li></ul></li>
+			<li><a href="Contacts.html"class="button">КОНТАКТЫ</a></li>
+			<li><a href="O_kyrse.html"class="button">О КУРСЕ </a></li>
+
+	</ul>
+
+</nav>
+
+<!--<hr align="center" width=100% size="2" color="#1e4c96" />					Черта отделяющая меню от части сайта-->
+	
+
+	</header>
+
+
+<!--конец Кнопка наверх-->
+																	<!--ОСНОВНАЯ ЧАСТЬ САЙТА-->
+
+	<main>
+		<img src="assets/img/unnamed.jpg" alt="" class="mw-100">
+		<img src="assets/img/unnamedmob.jpg" alt="" class="mw-1001">
+		
+
+	<h3>Выравнивание</h3>
+	<h3>Выравнивание по главной оси: <h10>justify-content</h10></h3>
+<p>Свойство выравнивает flex-элементы по главной оси flex-контейнера, распределяя свободное пространство, незанятое flex-элементами. Когда элемент преобразуется в flex-контейнер, flex-элементы по умолчанию сгруппированы вместе (если для них не заданы поля margin). Промежутки добавляются после расчета значений <h10>margin</h10> и <h10>flex-grow</h10>. Если какие-либо элементы имеют ненулевое значение <h10>flex-grow</h10> или <h10>margin: auto;</h10> свойство не будет оказывать влияния. Свойство не наследуется.</p>
+<table class="t1">
+<tbody><tr>
+<th colspan="2">justify-content</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><kbd>flex-start</kbd></td>
+<td>Значение по умолчанию. Flex-элементы выкладываются в направлении, идущем от начальной линии flex-контейнера.</td>
+</tr>
+<tr>
+<td><kbd>flex-end</kbd></td>
+<td>Flex-элементы выкладываются в направлении, идущем от конечной линии flex-контейнера.</td>
+</tr>
+<tr>
+<td><kbd>center</kbd></td>
+<td>Flex-элементы выравниваются по центру flex-контейнера.</td>
+</tr>
+<tr>
+<td><kbd>space-between</kbd></td>
+<td>Flex-элементы равномерно распределяются по линии. Первый flex-элемент помещается вровень с краем начальной линии, последний flex-элемент — вровень с краем конечной линии, а остальные flex-элементы на линии распределяются так, чтобы расстояние между любыми двумя соседними элементами было одинаковым. Если оставшееся свободное пространство отрицательно или в строке присутствует только один flex-элемент, это значение идентично параметру <kbd>flex-start</kbd>.</td>
+</tr>
+<tr>
+<td><kbd>space-around</kbd></td>
+<td>Flex-элементы на линии распределяются так, чтобы расстояние между любыми двумя смежными flex-элементами было одинаковым, а расстояние между первым / последним flex-элементами и краями flex-контейнера составляло половину от расстояния между flex-элементами.</td>
+</tr>
+<tr>
+<td><kbd>initial</kbd></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><kbd>inherit</kbd></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+<img src="assets/img/justify-content.png" class="minimized" alt="клик для увеличения">
+
+<pre>
+.flex-container {
+display: -webkit-flex; 
+-webkit-justify-content: flex-start;
+display: flex;
+justify-content: flex-start;
+}
+</pre>
+
+
+<h3>Выравнивание по поперечной оси: <h10>align-items</h10> и <h10>align-self</h10></h3>
+
+<p>Flex-элементы можно выравнивать по поперечной оси текущей строки flex-контейнера. <h10>align-items</h10> устанавливает выравнивание для всех элементов flex-контейнера, включая анонимные flex-элементы. <h10>align-self</h10> позволяет переопределить это выравнивание для отдельных flex-элементов. Если любое из поперечных <h10>margin</h10> flex-элемента имеет значение <h10>auto</h10>, <h10>align-self</h10> не имеет никакого влияния.</p>
+
+
+
+<h3><h10>Align-items</h10></h3>
+<p>Свойство выравнивает flex-элементы, в том числе и анонимные flex-элементы по поперечной оси. Не наследуется.</p>
+
+
+<table class="t1">
+<tbody><tr>
+<th colspan="2">align-items</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><kbd>flex-start</kbd></td>
+<td>Верхний край flex-элемента помещается вплотную с flex-линией (или на расстоянии, с учетом заданных полей <kbd>margin</kbd> и рамок <kbd>border</kbd> элемента), проходящей через начало поперечной оси.</td>
+</tr>
+<tr>
+<td><kbd>flex-end</kbd></td>
+<td>Нижний край flex-элемента помещается вплотную с flex-линией (или на расстоянии, с учетом заданных полей <kbd>margin</kbd> и рамок <kbd>border</kbd> элемента), проходящей через конец поперечной оси.</td>
+</tr>
+<tr>
+<td><kbd>center</kbd></td>
+<td>Поля flex-элемента центрируется по поперечной оси в пределах flex-линии.</td>
+</tr>
+<tr>
+<td><kbd>baseline</kbd></td>
+<td>Базовые линии всех flex-элементов, участвующих в выравнивании, совпадают.</td>
+</tr>
+<tr>
+<td><kbd>stretch</kbd></td>
+<td>Если поперечный размер flex-элемента вычисляется как <kbd>auto</kbd> и ни одно из поперечных значений <kbd>margin</kbd> не равно <kbd>auto</kbd>, элемент растягивается. Значение по умолчанию.</td>
+</tr>
+<tr>
+<td><kbd>initial</kbd></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><kbd>inherit</kbd></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+
+<img src="assets/img/align-items.jpg" class="minimized" alt="клик для увеличения">
+
+<pre>
+.flex-container {
+display: -webkit-flex;
+-webkit-align-items: flex-start;
+display: flex;
+align-items: flex-start;
+}
+</pre>
+
+
+ <h3><h10>Align-self</h10></h3>
+<p>Свойство отвечает за выравнивание отдельно взятого flex-элемента по высоте flex-контейнера. Переопределяет выравнивание, заданное <h10>align-items</h10>. Не наследуется.
+</p>
+<table class="t1">
+<tbody><tr>
+<th colspan="2">align-self</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><kbd>auto</kbd></td>
+<td>Значение по умолчанию. Flex-элемент использует выравнивание, указанное в свойстве <kbd>align-items</kbd> flex-контейнера.</td>
+</tr>
+<tr>
+<td><kbd>flex-start</kbd></td>
+<td>Верхний край flex-элемента помещается вплотную с flex-линией (или на расстоянии, с учетом заданных полей <kbd>margin</kbd> и рамок <kbd>border</kbd> элемента), проходящей через начало поперечной оси.</td>
+</tr>
+<tr>
+<td><kbd>flex-end</kbd></td>
+<td>Нижний край flex-элемента помещается вплотную с flex-линией (или на расстоянии, с учетом заданных полей <kbd>margin</kbd> и рамок <kbd>border</kbd> элемента), проходящей через конец поперечной оси.</td>
+</tr>
+<tr>
+<td><kbd>center</kbd></td>
+<td>Поля flex-элемента центрируется по поперечной оси в пределах flex-линии.</td>
+</tr>
+<tr>
+<td><kbd>baseline</kbd></td>
+<td>Flex-элемент выравнивается по базовой линии.</td>
+</tr>
+<tr>
+<td><kbd>stretch</kbd></td>
+<td>Если поперечный размер flex-элемента вычисляется как <kbd>auto</kbd> и ни одно из поперечных значений <kbd>margin</kbd> не равно <kbd>auto</kbd>, элемент растягивается. Значение по умолчанию.</td>
+</tr>
+<tr>
+<td><kbd>initial</kbd></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><kbd>inherit</kbd></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+<img src="assets/img/align-self.png" class="minimized" alt="клик для увеличения">
+
+
+<pre>
+.flex-container {
+display: -webkit-flex;
+display: flex;
+}
+.flex-item {
+-webkit-align-self: center; 
+align-self: center;
+}
+</pre>
+
+
+<h3>Выравнивание строк flex-контейнера: <h10>align-content</h10></h3>
+
+<p>Свойство выравнивает строки в flex-контейнере при наличии дополнительного пространства на поперечной оси, аналогично выравниванию отдельных элементов на главной оси с помощью свойства <h10>justify-content</h10>. Свойство не влияет на однострочный flex-контейнер. Не наследуется.
+</p>
+
+<table class="t1">
+<tbody><tr>
+<th colspan="2">align-content</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><kbd>flex-start</kbd></td>
+<td>Строки укладываются по направлению к началу flex-контейнера. Край первой строки помещается вплотную к краю flex-контейнера, каждая последующая — вплотную к предыдущей строке.</td>
+</tr>
+<tr>
+<td><kbd>flex-end</kbd></td>
+<td>Строки укладываются по направлению к концу flex-контейнера. Край последней строки помещается вплотную к краю flex-контейнера, каждая предыдущая — вплотную к последующей строке.</td>
+</tr>
+<tr>
+<td><kbd>center</kbd></td>
+<td>Строки укладываются по направлению к центру flex-контейнера. Строки расположены вплотную друг к другу и выровнены по центру flex-контейнера с равным расстоянием между начальным краем содержимого flex-контейнера и первой строкой и между конечным краем содержимого flex-контейнера и последней строкой.</td>
+</tr>
+<tr>
+<td><kbd>space-between</kbd></td>
+<td>Строки равномерно распределены в flex-контейнере. Если оставшееся свободное пространство отрицательно или в flex-контейнере имеется только одна flex-линия, это значение идентично <kbd>flex-start</kbd>. В противном случае край первой строки помещается вплотную к начальному краю содержимого flex-контейнера, край последней строки — вплотную к конечному краю содержимого flex-контейнера. Остальные строки распределены так, чтобы расстояние между любыми двумя соседними строками было одинаковым.</td>
+</tr>
+<tr>
+<td><kbd>space-around</kbd></td>
+<td>Строки равномерно распределены в flex-контейнере с половинным пробелом на обоих концах. Если оставшееся свободное пространство отрицательно, это значение идентично цент<kbd>center</kbd>. В противном случае строки распределяются таким образом, чтобы расстояние между любыми двумя соседними строками было одинаковым, а расстояние между первой / последней строками и краями содержимого flex-контейнера составляло половину от расстояния между строками.</td>
+</tr>
+<tr>
+<td><kbd>stretch</kbd></td>
+<td>Значение по умолчанию. Строки flex-элементов равномерно растягиваются, заполняя все доступное пространство. Если оставшееся свободное пространство отрицательно, это значение идентично <kbd>flex-start</kbd>. В противном случае свободное пространство будет разделено поровну между всеми строками, увеличивая их поперечный размер.</td>
+</tr>
+<tr>
+<td><kbd>initial</kbd></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><kbd>inherit</kbd></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+
+<img src="assets/img/align-content.png" class="minimized" alt="клик для увеличения">
+
+
+<pre>
+.flex-container {
+display: -webkit-flex;
+-webkit-flex-flow: row wrap;
+-webkit-align-content: flex-end; 
+display: flex;
+flex-flow: row wrap;
+align-content: flex-end;
+height: 100px;
+}
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- &lt ДЛЯ ОТОБРАЖЕНИЯ ТЕГОВ  -->
+		
+	</main>
+			<!--Подвал сайта-->
+<footer>
+	<nav1>
+				<a href="index.html">ГЛАВНАЯ</a>
+				<a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+					<a href="2.html">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+				
+				
+				<a href="dopinfo.html">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+				<a href="">КОНТАКТЫ</a>
+				<a href="O_kyrse.html">О КУРСЕ</a>
+				
+	</nav1>
+
+	<!--Лого в подвале сайта для мобильной версии-->
+<div class="logofooter">
+		<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png"></a>
+	</div>
+<!-- завершение лого в подвале сайта для мобильной версии-->
+
+	<div class="logofooter">
+		<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png"></a>
+	</div>
+<div class="social">
+	<a href="#"><img src="assets/img/em.png" alt=""></a>
+	<a href="#"><img src="assets/img/face.png" alt=""></a>
+	<a href="#"><img src="assets/img/goo.png" alt=""></a>
+	<a href="#"><img src="assets/img/inst.png" alt=""></a>
+</div>
+
+
+
+
+
+ <div class="Copyright">
+ Copyright &copy; Alexey Terletsky 2020  Все права защищены
+ </div>
+</footer>
+
+
+	
+</body>
+
+
+
+
+<!--Кнопка наверх-->
+<div id="upbutton"></div>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 30) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 200);
+    });
+</script>
+
+
+<style>
+  #upbutton {
+    background: url("assets/img/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+<!--конец  Кнопка наверх-->
+
+</html>

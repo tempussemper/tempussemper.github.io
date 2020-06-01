@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Flexbox Alignment: centering a box</title>
+
+  <style>
+    body {
+      font: 1.2em Helvetica, Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+    }
+
+    textarea {
+      font-family: monospace;
+      display: block;
+      margin-bottom: 10px;
+      background-color: #F4F7F8;
+      border: none;
+      border-left: 6px solid #558ABB;
+      color: #4D4E53;
+      width: 90%;
+      max-width: 700px;
+      padding: 10px 10px 0px;
+      font-size: 90%;
+    }
+
+    textarea:nth-of-type(1) {
+      height: 200px
+    }
+
+    textarea:nth-of-type(2) {
+      height: 200px
+    }
+
+
+p{
+
+text-align: justify;
+color:#003559;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;      
+font-weight: bold;
+}
+
+
+
+
+    .playable-buttons {
+      text-align: right;
+      width: 90%;
+      max-width: 700px;
+      padding: 5px 10px 5px 26px;
+      font-size: 100%;
+    }
+
+    section {
+      height: 500px;
+      width: 90%;
+      max-width: 700px;
+      border: 1px solid #4D4E53;
+      border-radius: 2px;
+      padding: 10px 14px 10px 10px;
+      margin-bottom: 10px;
+    }
+
+    section input {
+      display: block;
+      margin: 5px;
+    }
+
+    .box {
+      width: 500px;
+      height: 300px;
+      border: 2px dotted rgb(96, 139, 168);
+    }
+
+    .box>* {
+      border: 2px solid rgb(96, 139, 168);
+      border-radius: 5px;
+      background-color: rgba(96, 139, 168, .2);
+    }
+  </style>
+
+  <style class="editable">.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box div {
+  width: 100px;
+  height: 100px;
+}
+      </style>
+
+
+<body>
+
+  <p>
+   Редактирование HTML кода
+ </p>
+  <textarea id="code" class="playable-html" style="height: 600px" >
+   &lt!DOCTYPE html>
+&lthtml>
+&lthead>
+    &lttitle>Блочная вёрстка&lt/title>
+&ltlink rel="stylesheet" type="text/css" href="style.css">
+&lt/head>
+&ltbody>
+&ltdiv id="container">
+  &ltdiv id="header">
+  &lth2>header ("чердак" сайта)&lt/h2>
+  &lt/div>
+  
+  <!--Здесь впишите новый блок id="navigation" 
+    для дальнейшего создания стилей для данного блока в части CSS. 
+    Задайте в блоке текст размером Н2 -->   
+ 
+     
+  &ltdiv id="sidebar">
+  &lth2>Левая панель&lt/h2>
+  &lt/div>
+  
+
+   <!-- В этом месте создайте блок для основного контента страницы(для более удобной навигации по странице id="content"). 
+    Задайте произвольный текст любого размера внутри блока.-->
+
+     
+  &ltdiv id="clear">
+     
+  &lt/div>
+                 
+  &ltdiv id="footer">
+  &lth2>footer ("подвал" сайта)&lt/h2>
+  &lt/div>
+&lt/div>
+&lt/body>
+&lt/html>
+  </textarea>
+
+
+
+<p>
+  Редактирование CSS
+</p>
+<textarea class="playable-css" style="height: 800px">
+  body {
+     background: #FFF;
+     color: #000;
+     font-family: Arial, sans-serif;
+     font-size: 14px;
+}
+
+#header {
+     background: #F5DEB3;
+     width: 100%;
+     height: 55px;
+}
+ 
+#container {
+     background: #FFD700;
+     margin: auto auto;
+     text-align: center;
+     width: 80%;
+     height: 400px;
+}
+ 
+
+<!--Добавьте стиль для созданного  блока navigation
+Задайте параметры для блока: цвет фона, ширина, высота, раcположение на странице.
+Добейтесь того, что бы блок гармонично вливался в макет страницы-->
+
+ 
+#sidebar {
+     background: #40E0D0;
+     float: left;
+     width: 20%;
+     height: 280px;
+}
+
+
+
+<!--  Добавьте стиль для созданного блока content.
+Задайте параметры для блока: цвет фона, ширина, высота, раcположение на странице.
+Добейтесь того, что бы блок гармонично вливался в макет страницы  -->
+
+ 
+#clear {
+     clear: both;
+}
+ 
+#footer {
+    background: #00BFFF;
+  width: 100%;
+  height: 40px;
+}
+</textarea>
+
+
+<p>
+  Результат отображения браузером
+</p>
+  <section><div class="box">
+  <div></div>
+</div>
+      </section>
+
+
+
+
+<!--&lt-->
+
+
+  <div class="playable-buttons">
+    <input id="reset" type="button" value="Вернуть исходное состояние">
+  </div>
+
+
+<script>
+  var section = document.querySelector('section');
+  var editable = document.querySelector('.editable');
+  var textareaHTML = document.querySelector('.playable-html');
+  var textareaCSS = document.querySelector('.playable-css');
+  var reset = document.getElementById('reset');
+  var htmlCode = textareaHTML.value;
+  var cssCode = textareaCSS.value;
+
+  function fillCode() {
+    editable.innerHTML = textareaCSS.value;
+    section.innerHTML = textareaHTML.value;
+  }
+
+  reset.addEventListener('click', function () {
+    textareaHTML.value = htmlCode;
+    textareaCSS.value = cssCode;
+    fillCode();
+  });
+
+  textareaHTML.addEventListener('input', fillCode);
+  textareaCSS.addEventListener('input', fillCode);
+  window.addEventListener('load', fillCode);
+</script>
+
+
+</body></html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Гибкость flex-элементов</title>
+	<link rel="stylesheet" href="assets/css/style.css">	
+<link rel="icon" href="assets/img/internetFAV.png" type="image/x-icon">     <!--Фавикон-->
+	<!--<link rel="stylesheet" href="assets/css/@media.css">	-->
+							<!--подключаем СSS файл-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--подключаем Шрифт-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/scripts.js"></script>-->
+	<script type="text/javascript" src="assets/js/script.js"></script>	
+										<!--подключаем джава файл-->
+	<script src="https://code.jquery.com/jquery-git.min.js"></script>	<!--подключаем библиотеку jsquary-->
+</head>
+<body>
+				<!--Голова сайта-->
+	<header>
+		<!--Логотип для мобильной версии-->
+		<div class="logo1">
+			<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png" alt="logo1"></a>  							<!--Логотип-->
+		</div>
+
+
+		
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png" alt="logo"></a>  							<!--Логотип-->
+		</div>
+		<!--выпадающее меню-->
+<nav>
+	<a id="menu" href="#" class="icon">&#9776;</a>	
+	<ul class="topmenu" id="myTopnav">
+	<li><a href="index.html" >ГЛАВНАЯ</a></li>
+	<li><a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+		<ul class="submenu">
+			<li><a href="Ssilka.html"> 1.Формирование контента и гиперссылки</a></li>
+			<li><a href="GraficaHTML.html">2.Графика в HTML</a></li>
+			<li><a href="Object.html">3.Вставка объектов</a></li>
+			<li><a href="tablCss.html">4.Таблицы стилей</a></li>
+			<li><a href="blochi.html">5.Блочная верстка</a></li>
+			<li><a href="Multimedia.html">6.Элементы мультимедиа</a></li>
+		</ul></li>
+		<li><a href="2.html"class="button">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+			<ul class="submenu">
+				<li><a href="1.OsnPon.html">1.Основные понятия Flex-технологий</a></li>
+				<li><a href="Flex_CONT.html">2.Flex-контейнер</a></li>
+				<li><a href="Flex_justify.html">3.Flex-элементы</a></li>
+				
+				<li><a href="Flex_Order.html">4.Порядок отображения flex-элементов и ориентация</a></li>
+			
+				
+				<li><a href="Flexibility.html">5.Гибкость flex-элементов</a></li>
+				<li><a href="Justify.html">6.Выравнивание</a></li>
+
+					</ul></li>
+					<li><a href="Praktika.html"class="button">ПРАКТИЧЕСКИЕ РАБОТЫ</a>
+					<ul class="submenu2">
+						<li><a href="Lab1.html">Практическая работа №1</a></li>
+						<li><a href="Lab2.html">Практическая работа №2</a></li>
+					<li><a href="Lab3.html">Практическая работа №3</a></li>
+				<li><a href="Lab4.html">Практическая работа №4</a></li>
+			<li><a href="Lab5.html">Практическая работа №5</a></li></ul></li>
+		<li><a href="dopinfo.html"class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+			<ul class="submenu2">
+				<li><a href="HTML.html"class="button">Начало работы с HTML </a></li></li>
+				<li><a href="Color.html"class="button">Цвет в web</a>
+				
+				<li><a href="GIF.html"class="button">FlexBox визуализация через GIF</a></li></ul></li>
+			<li><a href="Contacts.html"class="button">КОНТАКТЫ</a></li>
+			<li><a href="O_kyrse.html"class="button">О КУРСЕ </a></li>
+
+	</ul>
+
+</nav>
+
+<!--<hr align="center" width=100% size="2" color="#1e4c96" />					Черта отделяющая меню от части сайта-->
+	
+
+	</header>
+
+
+<!--конец Кнопка наверх-->
+																	<!--ОСНОВНАЯ ЧАСТЬ САЙТА-->
+
+	<main>
+		<img src="assets/img/unnamed.jpg" alt="" class="mw-100">
+		<img src="assets/img/unnamedmob.jpg" alt="" class="mw-1001">
+		<h3>Гибкость flex-элементов</h3>
+		<p>
+			Определяющим аспектом гибкого макета является возможность менять flex-элементы, изменяя их ширину/высоту (в зависимости от того, какой размер находится на главной оси), чтобы заполнить доступное пространство в основном измерении. Это делается с помощью свойства <h10>flex</h10>.</p>
+			<p> Flex-контейнер распределяет свободное пространство между своими дочерними элементами (пропорционально их коэффициенту <h10>flex-grow</h10>) для заполнения контейнера или сжимает их (пропорционально их коэффициенту <h10>flex-shrink</h10>), чтобы предотвратить переполнение.
+		</p>
+
+<p>
+	Flex-элемент будет полностью «негибок», если его значения <h10>flex-grow</h10> и <h10>flex-shrink</h10> равны нулю, и «гибкий» в противном случае.
+</p>
+
+<h3>
+	Задание гибких размеров одним свойством:<h10>flex</h10>
+</h3>
+
+<p>Свойство является сокращённой записью свойств <h10>flex-grow, flex-shrink</h10> и <h10>flex-basis</h10>. Значение по умолчанию: <h10>flex: 0 1 auto;</h10> </p>
+<p>
+Можно указывать как одно, так и все три значения свойств. Свойство не наследуется.</p>
+<table class="t1">
+<tbody><tr>
+<th colspan="2">flex</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td>коэффициент растяжения</td>
+<td>Коэффициент увеличения ширины flex-элемента относительно других flex-элементов.</td>
+</tr>
+<tr>
+<td>коэффициент сужения</td>
+<td>Коэффициент уменьшения ширины flex-элемента относительно других flex-элементов.</td>
+</tr>
+<tr>
+<td>базовая ширина</td>
+<td>Базовая ширина flex-элемента.</td>
+</tr>
+<tr>
+<td><kbd>auto</kbd></td>
+<td>Эквивалентно <kbd>flex: 1 1 auto;</kbd>.</td>
+</tr>
+<tr>
+<td><kbd>none</kbd></td>
+<td>Эквивалентно <kbd>flex: 0 0 auto;</kbd>.</td>
+</tr>
+<tr>
+<td><kbd>initial</kbd></td>
+<td>Устанавливает значение свойства в значение по умолчанию. Эквивалентно <kbd>flex: 0 1 auto;</kbd>.</td>
+</tr>
+<tr>
+<td><kbd>inherit</kbd></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+
+<pre>
+.flex-container {
+display: -webkit-flex;
+display: flex;
+}
+.flex-item {
+-webkit-flex: 3 1 100px; 
+-ms-flex:  3 1 100px; 
+flex:  3 1 100px;
+}
+</pre>
+
+
+<h3>Коэффициент роста: <h10>flex-grow</h10></h3>
+<p>
+Свойство определяет коэффициент роста одного flex-элемента относительно других flex-элементов в flex-контейнере при распределении положительного свободного пространства. Если сумма значений <h10>flex-grow</h10> flex-элементов в строке меньше 1, они занимают менее 100% свободного пространства. Свойство не наследуется.
+</p>
+
+<table class="t1">
+<tbody><tr>
+<th colspan="2">flex-grow</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td>число</td>
+<td>Положительное целое или дробное число, устанавливающее коэффициент роста flex-элемента. Значение по умолчанию <kbd>0</kbd>.</td>
+</tr>
+<tr>
+<td><kbd>initial</kbd></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><kbd>inherit</kbd></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+<h3>Активное изучение</h3>
+<iframe class="live-sample-frame" frameborder="0" height="2400px" src="assets/img/ForFlexibility.html" width="80%"></iframe>
+
+
+
+<h3>Коэффициент сжатия: <h10>flex-shrink</h10></h3>
+<p>Свойство указывает коэффициент сжатия flex-элемента относительно других flex-элементов при распределении отрицательного свободного пространства. Умножается на базовый размер <h10>flex-basis</h10>. Отрицательное пространство распределяется пропорционально тому, насколько элемент может сжаться, поэтому, например, маленький flex-элемент не уменьшится до нуля, пока не будет заметно уменьшен flex-элемент большего размера. Свойство не наследуется.
+</p>
+<table class="t1">
+<tbody><tr>
+<th colspan="2">flex-shrink</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td>число</td>
+<td>Положительное целое или дробное число, устанавливающее коэффициент уменьшения flex-элемента. Значение по умолчанию <kbd>1</kbd>.</td>
+</tr>
+<tr>
+<td><kbd>initial</kbd></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><kbd>inherit</kbd></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+<pre>
+.flex-container {
+display: -webkit-flex;
+display: flex;
+}
+.flex-item {
+-webkit-flex-shrink: 3; 
+flex-shrink: 3;
+}
+</pre>
+
+
+<h3>Базовый размер: <h10>flex-basis</h10></h3>
+<p>Свойство устанавливает начальный основной размер flex-элемента до распределения свободного пространства в соответствии с коэффициентами гибкости. Для всех значений, кроме <h10>auto</h10> и <h10>content</h10>, базовый гибкий размер определяется так же, как <h10>width</h10> в горизонтальных режимах записи. Процентные значения определяются относительно размера flex-контейнера, а если размер не задан, используемым значением для <h10>flex-basis</h10> являются размеры его содержимого. Не наследуется.</p>
+
+<table class="t1">
+<tbody><tr>
+<th colspan="2">flex-basis</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><kbd>auto</kbd></td>
+<td>Значение по умолчанию. Элемент получает базовый размер, соответствующий размеру его содержимого (если он не задан явно).</td>
+</tr>
+<tr>
+<td><kbd>content</kbd></td>
+<td>Определяет базовый размер в зависимости от содержимого flex-элемента.</td>
+</tr>
+<tr>
+<td>длина</td>
+<td>Базовый размер определяется так же, как для ширины и высоты. Задается в единицах длины(em, ex, px, %).</td>
+</tr>
+<tr>
+<td><kbd>initial</kbd></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><kbd>inherit</kbd></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+
+<pre>
+.flex-container {
+display: -webkit-flex;
+display: flex;
+}
+.flex-item {
+-webkit-flex-basis: 100px; 
+flex-basis: 100px;
+}
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- &lt ДЛЯ ОТОБРАЖЕНИЯ ТЕГОВ  -->
+		
+	</main>
+			<!--Подвал сайта-->
+<footer>
+	<nav1>
+				<a href="index.html">ГЛАВНАЯ</a>
+				<a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+					<a href="2.html">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+				
+				
+				<a href="dopinfo.html">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+				<a href="">КОНТАКТЫ</a>
+				<a href="O_kyrse.html">О КУРСЕ</a>
+				
+	</nav1>
+
+	<!--Лого в подвале сайта для мобильной версии-->
+<div class="logofooter">
+		<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png"></a>
+	</div>
+<!-- завершение лого в подвале сайта для мобильной версии-->
+
+	<div class="logofooter">
+		<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png"></a>
+	</div>
+<div class="social">
+	<a href="#"><img src="assets/img/em.png" alt=""></a>
+	<a href="#"><img src="assets/img/face.png" alt=""></a>
+	<a href="#"><img src="assets/img/goo.png" alt=""></a>
+	<a href="#"><img src="assets/img/inst.png" alt=""></a>
+</div>
+
+
+
+ <div class="Copyright">
+ Copyright &copy; Alexey Terletsky 2020  Все права защищены
+ </div>
+</footer>
+
+
+	
+</body>
+
+
+
+
+<!--Кнопка наверх-->
+<div id="upbutton"></div>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 30) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 200);
+    });
+</script>
+
+
+<style>
+  #upbutton {
+    background: url("assets/img/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+<!--конец  Кнопка наверх-->
+
+</html>

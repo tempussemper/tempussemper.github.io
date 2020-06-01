@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Элементы мультимедиа</title>
+	<link rel="stylesheet" href="assets/css/style.css">	
+	<link rel="stylesheet" href="assets/css/@media.css">	
+	<link rel="icon" href="assets/img/internetFAV.png" type="image/x-icon">     <!--Фавикон-->
+							<!--подключаем СSS файл-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--подключаем Шрифт-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script type="text/javascript" src="assets/js/script.js"></script>										<!--подключаем джава файл-->
+
+</head>
+<body>
+				<!--Голова сайта-->
+	<header>
+		<!--Логотип для мобильной версии-->
+		<div class="logo1">
+			<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png" alt="logo1"></a>  							<!--Логотип-->
+		</div>
+
+
+		
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png" alt="logo"></a>  							<!--Логотип-->
+		</div>
+		<!--выпадающее меню-->
+<nav>
+	<a id="menu" href="#" class="icon">&#9776;</a>	
+	<ul class="topmenu" id="myTopnav">
+	<li><a href="index.html" >ГЛАВНАЯ</a></li>
+	<li><a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+		<ul class="submenu">
+			<li><a href="Ssilka.html"> 1.Формирование контента и гиперссылки</a></li>
+			<li><a href="GraficaHTML.html">2.Графика в HTML</a></li>
+			<li><a href="Object.html">3.Вставка объектов</a></li>
+			<li><a href="tablCss.html">4.Таблицы стилей</a></li>
+			<li><a href="blochi.html">5.Блочная верстка</a></li>
+			<li><a href="Multimedia.html">6.Элементы мультимедиа</a></li>
+		</ul></li>
+		<li><a href="2.html"class="button">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+			<ul class="submenu">
+				<li><a href="1.OsnPon.html">1.Основные понятия Flex-технологий</a></li>
+				<li><a href="Flex_CONT.html">2.Flex-контейнер</a></li>
+				<li><a href="Flex_justify.html">3.Flex-элементы</a></li>
+				
+				<li><a href="Flex_Order.html">4.Порядок отображения flex-элементов и ориентация</a></li>
+			
+				
+				<li><a href="Flexibility.html">5.Гибкость flex-элементов</a></li>
+				<li><a href="Justify.html">6.Выравнивание</a></li>
+
+					</ul></li>
+					<li><a href="Praktika.html"class="button">ПРАКТИЧЕСКИЕ РАБОТЫ</a>
+					<ul class="submenu2">
+						<li><a href="Lab1.html">Практическая работа №1</a></li>
+						<li><a href="Lab2.html">Практическая работа №2</a></li>
+					<li><a href="Lab3.html">Практическая работа №3</a></li>
+				<li><a href="Lab4.html">Практическая работа №4</a></li>
+			<li><a href="Lab5.html">Практическая работа №5</a></li></ul></li>
+		<li><a href="dopinfo.html"class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+			<ul class="submenu2">
+				<li><a href="HTML.html"class="button">Начало работы с HTML </a></li></li>
+				<li><a href="Color.html"class="button">Цвет в web</a>
+				
+				<li><a href="GIF.html"class="button">FlexBox визуализация через GIF</a></li></ul></li>
+			<li><a href="Contacts.html"class="button">КОНТАКТЫ</a></li>
+			<li><a href="O_kyrse.html"class="button">О КУРСЕ </a></li>
+
+	</ul>
+
+</nav>
+	</header>
+					<!--Основная часть сайта-->
+
+<main>
+	<img src="assets/img/unnamed.jpg" alt="" class="mw-100"> 
+	<img src="assets/img/unnamedmob.jpg" alt="" class="mw-1001"> 
+	<h3>Элементы мультимедиа</h3>	
+<p>Мультимедиа поставляется во многих различных форматах. Это может быть почти все, что вы можете услышать или увидеть.
+Примеры: изображения, музыка, звук, видео, записи, фильмы, анимация и многое другое.
+Веб-страницы часто содержат мультимедийные элементы различных типов и форматов.
+	</p>
+<h3>Поддержка браузера</h3>
+<p>Первые веб-обозреватели поддерживали только текст, ограниченный одним шрифтом в одном цвете.
+Позже появились браузеры с поддержкой цветов и шрифтов, и образы!
+Аудио, видео и анимация были обработаны по-разному основными браузерами. Поддерживаются различные форматы, и для работы некоторых форматов требуются дополнительные вспомогательные программы (подключаемые модули).</p>
+	<p>
+		В HTML имеются два элемента для работы с мультимедиа:</p>
+<ul>
+<li> Audio.</li>
+<li> Video.</li>
+</ul>
+	<p>Первый элемент, как следует из названия, служит для добавления аудио-файлов. Простейший пример использования элемента audio в HTML 5 приведён ниже:
+	</p>
+<pre>
+&lthtml>
+&lthead>
+&lt/head>
+&ltbody>
+&ltaudio controls>
+&ltsource src="Путь к аудиофайлу /gimn.mp3" type="audio/mpeg">
+&lt/audio>
+&ltp>При нажатии на клавишу Play заиграет гимн Российской Федерации.&lt/p>
+&lt/body>
+&lt/html>
+</pre>
+
+<audio controls>
+<source src="assets/multimedia/gimn.mp3" type="audio/mpeg" >
+</audio>
+<p>При нажатии на клавишу <h10>Play</h10> заиграет гимн Российской Федерации.</p>
+
+<p>
+У тега <h10>&ltaudio></h10> имеются три атрибута:</p>
+<ul>
+<li>Атрибут <h10>src</h10> - указывает путь к файлу для проигрывания.</li>
+
+<li>Атрибут <h10>autoplay</h10> - сообщает браузеру о том, что файл необходимо воспроизвести сразу после загрузки страницы.</li>
+
+<li>Атрибут <h10>loop</h10> - указывает, сколько раз необходимо проиграть файл (разумеется, если пользователь не закроет страницу).</li>
+</ul>
+
+<p>Обратите внимание, что внутри тега <h10>&ltaudio></h10> имеется текст, который служит для информации о мелодии, что является полезным, например, для людей с ограниченными возможностями.</p>
+<p>
+
+<h3>HTML аудио-как это работает</h3>
+<p>Атрибут <h10>controls</h10> добавляет элементы управления звуком, такие как воспроизведение, пауза и громкость.</p>
+
+<p>Элемент <h10>&ltsource></h10> позволяет указать альтернативные аудиофайлы, которые могут быть выбраны обозревателем. Браузер будет использовать первый распознанный формат.</p>
+
+<p>Текст между тегами <h10>&ltaudio></h10> и <h10>&lt/audio></h10> будет отображаться только в обозревателях, не поддерживающих элемент <h10>&ltaudio></h10>.</p>
+
+<h3>Аудио-методы, свойства и события HTML</h3>
+<p>HTML5 определяет методы, свойства и события DOM для элемента <h10>&ltaudio></h10>.</p>
+
+<p>Это позволяет загружать, воспроизводить и приостанавливать аудио, а также задавать длительность и громкость.</p>
+
+<p>Есть также события DOM, которые могут уведомить вас, когда звук начинает играть, приостановлено и т.д.</p>
+
+<p>Для полной информации по тегам перейдите к <a href="spravka.html">справке аудио/видео</a>.</p>
+
+<h3>Аудио форматы</h3>
+
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th>Формат</th>
+<th style="width:90px">Файл</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td style="width:150px">MIDI</td>
+<td>.mid<br>.midi</td>
+<td>MIDI (музыкальный инструмент цифровой интерфейс).
+Основной формат для всех электронных музыкальных устройств, таких как синтезаторы и PC Sound cards. MIDI файлы не содержат звука, но цифровые заметки, которые могут быть воспроизведены электроникой.
+Хорошо играет на всех компьютерах и музыкальном оборудовании, но не в веб-браузерах.</td>
+</tr>
+<tr>
+<td>RealAudio</td>
+<td>.rm<br>.ram</td>
+<td>Realaudio.
+Разработано реальными носителями, чтобы обеспечить потоковую передачу аудио с низкой пропускной способностью. Не воспроизводится в веб-браузерах.</td>
+</tr>
+<tr>
+<td>WMA</td>
+<td>.wma</td>
+<td>WMA (звук Windows Media). Разработанный корпорацией Майкрософт. Обычно используется в музыкальных плеерах. Хорошо играет на компьютерах с Windows, но не в веб-обозревателях.</td>
+</tr>
+<tr>
+<td>AAC</td>
+<td>.aac</td>
+<td>AAC (улучшенное звуковое кодирование).
+Разработанный Apple в качестве формата по умолчанию для iTunes. Хорошо играет на компьютерах Apple, но не в веб-браузерах.</td>
+</tr>
+<tr>
+<td>WAV</td>
+<td>.wav</td>
+<td>Wav.
+Разработанный IBM и Microsoft. Хорошо воспроизводит операционные системы Windows, Macintosh и Linux.
+Поддерживается HTML5.</td>
+</tr>
+<tr>
+<td>Ogg</td>
+<td>.ogg</td>
+<td>Ogg.
+Разработанный фондом Xiph.org. Поддерживается HTML5.</td>
+</tr>
+<tr>
+<td>MP3</td>
+<td>.mp3</td>
+<td>MP3 файлы на самом деле звуковая часть MPEG файлов.
+MP3 является самым популярным форматом для музыкальных проигрывателей. Сочетает в себе хорошее сжатие (небольшие файлы) с высоким качеством. Поддерживается всеми браузерами.</td>
+</tr>
+<tr>
+<td>MP4</td>
+<td>.mp4</td>
+<td>MP4 является формат видео, но также может быть использован для аудио. MP4 видео является предстоящим видео формат в Интернете. Это приводит к автоматической поддержки MP4 аудио всеми браузерами.</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+<h3>HTML Видео</h3>	
+<p>Элемент <h10>&ltvideo></h10> используется для добавления на страницу видео-файлов.
+</p>
+<pre>
+&lthtml>
+&lthead>
+&lt/head>
+&ltbody>
+&ltvideo controls>
+&ltsource src="Путь к видеофайлу/Pexels Videos 2815411.mp4">
+&lt/video>
+&ltp>По щелчку на видео начнется воспроизведение&lt/p>
+&lt/body>
+&lt/html>
+</pre>
+<video controls>
+ <source src="assets/multimedia/Pexels Videos 2815411.mp4">
+</video>
+<p>По щелчку на видео начнется воспроизведение</p>
+<br>
+<br>
+
+
+
+
+<p>Атрибут <h10>controls</h10> добавляет элементы управления видео, такие как воспроизведение, пауза и громкость.</p>
+
+<p>Это хорошая идея, чтобы всегда включать <h10>width</h10> и <h10>height</h10> атрибутов. Если высота и ширина не заданы, страница может мерцать во время загрузки видео.</p>
+
+<p>Элемент <h10>&ltsource></h10> позволяет указать альтернативные видеофайлы, которые могут быть выбраны обозревателем. Браузер будет использовать первый распознанный формат.</p>
+
+<p>Текст между тегами <h10>&ltvideo></h10> и <h10>&lt/video></h10> будет отображаться только в обозревателях, не поддерживающих элемент <h10>&ltvideo></h10>.</p>
+
+
+<h3>Видео форматы</h3>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th>Формат</th>
+<th style="width:50px">Файл</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td>MPEG</td>
+<td>.mpg<br>.mpeg</td>
+<td>Mpeg.
+Разработано группой экспертов Moving Pictures. Первый популярный формат видео в Интернете. Используется для поддержки всех браузеров, но не поддерживается в HTML5 (см. MP4).</td>
+</tr>
+<tr>
+<td>AVI</td>
+<td>.avi</td>
+<td>AVI (чередование аудио видео). Разработанный корпорацией Майкрософт. Обычно используется в видеокамерах и телевизионной аппаратуре. Хорошо играет на компьютерах с Windows, но не в веб-обозревателях.</td>
+</tr>
+<tr>
+<td>WMV</td>
+<td>.wmv</td>
+<td>WMV (видео Windows Media). Разработанный корпорацией Майкрософт. Обычно используется в видеокамерах и телевизионной аппаратуре. Хорошо играет на компьютерах с Windows, но не в веб-обозревателях.</td>
+</tr>
+<tr>
+<td>QuickTime</td>
+<td>.mov</td>
+<td>Quicktime. Разработанный компанией Apple. Обычно используется в видеокамерах и телевизионной аппаратуре.
+Хорошо играет на компьютерах Apple, но не в веб-браузерах. (см. MP4)</td>
+</tr><tr>
+<td>RealVideo</td>
+<td>.rm<br>.ram</td>
+<td>RealVideo. Разработано реальными носителями, чтобы обеспечить потоковую передачу видео с низкой пропускной способностью. Он по-прежнему используется для онлайн-видео и Интернет-телевидение, но не играет в веб-браузерах.</td>
+</tr>
+<tr>
+<td>Flash</td>
+<td>.swf<br>.flv</td>
+<td>Вспышки. Разработанный Macromedia. Часто требуется дополнительный компонент (подключаемый модуль) для воспроизведения в веб-браузерах.</td>
+</tr>
+<tr>
+<td>Ogg</td>
+<td>.ogg</td>
+<td>Theora OGG. Разработанный фондом Xiph.org. Поддерживается HTML5.</td>
+</tr>
+<tr>
+<td>WebM</td>
+<td>.webm</td>
+<td>Webm.
+Разработано веб-гигантами, Mozilla, Opera, Adobe и Google. Поддерживается HTML5.</td>
+</tr>
+<tr>
+<td>MPEG-4<br>or MP4</td>
+<td>.mp4</td>
+<td>MP4.
+Разработано группой экспертов Moving Pictures на основе QuickTime. Обычно используется в новых видеокамерах и ТВ оборудовании.
+Поддерживается всеми браузерами которые работают с HTML5. Рекомендовано YouTube.</td>
+</tr>
+</tbody></table>
+
+
+	
+
+<!-- &lt ДЛЯ ОТОБРАЖЕНИЯ ТЕГОВ  -->
+	</main>
+			<!--Подвал сайта-->
+<footer>
+	<nav1>
+				<a href="index.html">ГЛАВНАЯ</a>
+				<a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+				<a href="2.html">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+				
+				
+				<a href="dopinfo.html">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+				<a href="">КОНТАКТЫ</a>
+				<a href="O_kyrse.html">О КУРСЕ</a>
+				
+	</nav1>
+
+	<!--Лого в подвале сайта для мобильной версии-->
+<div class="logofooter">
+		<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png"></a>
+	</div>
+<!-- завершение лого в подвале сайта для мобильной версии-->
+
+	<div class="logofooter">
+		<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png"></a>
+	</div>
+<div class="social">
+	<a href="#"><img src="assets/img/em.png" alt=""></a>
+	<a href="#"><img src="assets/img/face.png" alt=""></a>
+	<a href="#"><img src="assets/img/goo.png" alt=""></a>
+	<a href="#"><img src="assets/img/inst.png" alt=""></a>
+</div>
+
+
+ <div class="Copyright">
+ Copyright &copy; Alexey Terletsky 2020  Все права защищены
+ </div>
+</footer>
+
+
+
+
+	
+</body>
+
+
+
+
+<!--Кнопка наверх-->
+<div id="upbutton"></div>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 300);
+    });
+</script>
+
+
+<style>
+  #upbutton {
+    background: url("assets/img/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+<!--конец Кнопка наверх-->
+</html>

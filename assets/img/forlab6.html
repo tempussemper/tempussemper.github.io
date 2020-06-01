@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Flexbox Alignment: centering a box</title>
+
+  <style>
+    body {
+      font: 1.2em Helvetica, Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+    }
+
+    textarea {
+      font-family: monospace;
+      display: block;
+      margin-bottom: 10px;
+      background-color: #F4F7F8;
+      border: none;
+      border-left: 6px solid #558ABB;
+      color: #4D4E53;
+      width: 90%;
+      max-width: 700px;
+      padding: 10px 10px 0px;
+      font-size: 90%;
+    }
+
+    textarea:nth-of-type(1) {
+      height: 200px
+    }
+
+    textarea:nth-of-type(2) {
+      height: 200px
+    }
+
+
+p{
+
+text-align: justify;
+color:#003559;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;      
+font-weight: bold;
+}
+
+
+
+
+    .playable-buttons {
+      
+      text-align: right;
+      width: 90%;
+      max-width: 700px;
+      padding: 5px 10px 5px 26px;
+      font-size: 100%;
+      outline: none;
+    }
+
+
+    section {
+      height: 100%;
+      width: 90%;
+      max-width: 700px;
+      border: 1px solid #4D4E53;
+      border-radius: 2px;
+      padding: 10px 14px 10px 10px;
+      margin-bottom: 10px;
+    }
+
+    section input {
+      display: block;
+      margin: 5px;
+    }
+
+    .box {
+      width: 500px;
+      height: 300px;
+      border: 2px dotted rgb(96, 139, 168);
+    }
+
+    .box>* {
+      border: 2px solid rgb(96, 139, 168);
+      border-radius: 5px;
+      background-color: rgba(96, 139, 168, .2);
+    }
+  </style>
+
+  <style class="editable">.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box div {
+  width: 100px;
+  height: 100px;
+}
+      </style>
+
+
+<body>
+
+  <p>
+   Редактирование HTML кода
+ </p>
+  <textarea id="code" class="playable-html" style="height: 300px" >
+&lt!DOCTYPE html>
+&lthtml>
+&lthead>  &lt/head>
+&ltbody>
+<header>
+  <nav>
+    <ul class="topmenu" id="myTopnav">
+      <li><a href="" >ГЛАВНАЯ</a></li>
+      <li><a href=""class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+      <li><a href=""class="button">КОНТАКТЫ</a></li>
+    </ul>
+</nav>
+<img src="https://abit.pskgu.ru/download.php/pskgu/files/PAGES/IMAGES/9eb213a8-d185-471e-abc1-c0618a8b30c2/74207962684368DCF6DFD957F8509068" class="mw-100">
+</header>
+
+<div class="content">
+    <p>Формирование информатики как науки происходило в XX веке и было связано с развитием вычислительной техники.</p>
+    <p>Понятие "информатика" возникло в 60-х годах во Франции. Так решили назвать область знаний, изучающую применение электронных вычислительных машин для автоматизации обработки данных. Слово "информатика" образовано из двух слов "информация" и "автоматика".</p>
+    <p>В англоязычных странах, особенно в США, вместо термина "informatics" обычно используют "computer science", то есть компьютерная наука.</p>
+    <p>Хотя понятия "информатика" и "компьютерная наука" можно считать синонимами, второй появился раньше, в начале 40-х годов XX века. Компьютерная наука представляла собой соединение возможностей электронно-вычислительных машин (ЭВМ) того времени, математической логики и теории алгоритмов.</p>
+    <img  alt="Компьютерная наука = ЭВМ + логика + алгоритмы" src="https://inf1.info/sites/default/files/inline-images/computer_science.png" class="IBM">
+</div>
+
+<div class="questions">
+  
+</div>
+
+<footer>
+  <nav1>
+        <a href="">ГЛАВНАЯ</a>    
+        <a href="">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+        <a href="">КОНТАКТЫ</a>        
+  </nav1>
+  
+</footer>
+&lt/body>
+&lt/html>
+  </textarea>
+
+
+
+<p>
+  Редактирование CSS
+</p>
+<textarea class="playable-css" style="height: 660px">
+nav{
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  outline: none; 
+}
+
+.topmenu {
+  backface-visibility: hidden;
+  
+}
+
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.topmenu > li > a {
+  height: 70px;
+  line-height: 70px;
+  padding: 0 15px;
+  font-weight: bold;
+  color: black;
+}
+
+.topmenu > li > a:hover{
+  color: #FFCC00;
+  outline: none;
+  transition: .4s ease-in-out;
+}
+
+.mw-100{
+  max-width: 100%;
+}
+
+.content{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.content >p{
+  font-size:15px;
+  color: black;
+}
+
+.IBM{
+  max-width: 100%
+} 
+
+footer{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
+}
+
+footer nav1 a{
+  text-decoration:none;
+}
+footer nav1 a:hover{
+  color: #FFCC00;
+  outline: none;
+  transition: .4s ease-in-out;
+}
+
+
+</textarea>
+
+
+<p>
+Результат отображения браузером
+</p>
+  <section><div class="box">
+  <div></div>
+</div>
+      </section>
+
+
+
+
+<!--&lt-->
+
+
+  <div class="playable-buttons">
+    <input id="reset" type="button" value="Вернуть исходное состояние">
+  </div>
+
+
+<script>
+  var section = document.querySelector('section');
+  var editable = document.querySelector('.editable');
+  var textareaHTML = document.querySelector('.playable-html');
+  var textareaCSS = document.querySelector('.playable-css');
+  var reset = document.getElementById('reset');
+  var htmlCode = textareaHTML.value;
+  var cssCode = textareaCSS.value;
+
+  function fillCode() {
+    editable.innerHTML = textareaCSS.value;
+    section.innerHTML = textareaHTML.value;
+  }
+
+  reset.addEventListener('click', function () {
+    textareaHTML.value = htmlCode;
+    textareaCSS.value = cssCode;
+    fillCode();
+  });
+
+  textareaHTML.addEventListener('input', fillCode);
+  textareaCSS.addEventListener('input', fillCode);
+  window.addEventListener('load', fillCode);
+</script>
+
+
+</body></html>

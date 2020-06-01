@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Основные понятия</title>
+	<link rel="icon" href="assets/img/internetFAV.png" type="image/x-icon">     <!--Фавикон-->
+	<link rel="stylesheet" href="assets/css/style.css">	
+	<link rel="stylesheet" href="assets/css/@media.css">	
+							<!--подключаем СSS файл-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--подключаем Шрифт-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script type="text/javascript" src="assets/js/script.js"></script>										<!--подключаем джава файл-->
+
+</head>
+<body>
+				<!--Голова сайта-->
+	<header>
+		<!--Логотип для мобильной версии-->
+		<div class="logo1">
+			<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png" alt="logo1"></a>  							<!--Логотип-->
+		</div>
+
+
+		
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png" alt="logo"></a>  							<!--Логотип-->
+		</div>
+		<!--выпадающее меню-->
+<nav>
+	<a id="menu" href="#" class="icon">&#9776;</a>	
+	<ul class="topmenu" id="myTopnav">
+	<li><a href="index.html" >ГЛАВНАЯ</a></li>
+	<li><a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+		<ul class="submenu">
+			<li><a href="Ssilka.html"> 1.Формирование контента и гиперссылки</a></li>
+			<li><a href="GraficaHTML.html">2.Графика в HTML</a></li>
+			<li><a href="Object.html">3.Вставка объектов</a></li>
+			<li><a href="tablCss.html">4.Таблицы стилей</a></li>
+			<li><a href="blochi.html">5.Блочная верстка</a></li>
+			<li><a href="Multimedia.html">6.Элементы мультимедиа</a></li>
+		</ul></li>
+		<li><a href="2.html"class="button">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+			<ul class="submenu">
+				<li><a href="1.OsnPon.html">1.Основные понятия Flex-технологий</a></li>
+				<li><a href="Flex_CONT.html">2.Flex-контейнер</a></li>
+				<li><a href="Flex_justify.html">3.Flex-элементы</a></li>
+				
+				<li><a href="Flex_Order.html">4.Порядок отображения flex-элементов и ориентация</a></li>
+			
+				
+				<li><a href="Flexibility.html">5.Гибкость flex-элементов</a></li>
+				<li><a href="Justify.html">6.Выравнивание</a></li>
+
+					</ul></li>
+					<li><a href="Praktika.html"class="button">ПРАКТИЧЕСКИЕ РАБОТЫ</a>
+					<ul class="submenu2">
+						<li><a href="Lab1.html">Практическая работа №1</a></li>
+						<li><a href="Lab2.html">Практическая работа №2</a></li>
+					<li><a href="Lab3.html">Практическая работа №3</a></li>
+				<li><a href="Lab4.html">Практическая работа №4</a></li>
+			<li><a href="Lab5.html">Практическая работа №5</a></li></ul></li>
+		<li><a href="dopinfo.html"class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+			<ul class="submenu2">
+				<li><a href="HTML.html"class="button">Начало работы с HTML </a></li></li>
+				<li><a href="Color.html"class="button">Цвет в web</a>
+				
+				<li><a href="GIF.html"class="button">FlexBox визуализация через GIF</a></li></ul></li>
+			<li><a href="Contacts.html"class="button">КОНТАКТЫ</a></li>
+			<li><a href="O_kyrse.html"class="button">О КУРСЕ </a></li>
+
+	</ul>
+
+</nav>
+				<!--Черта отделяющая меню от части сайта-->
+	</header>
+
+																			<!--ОСНОВНАЯ ЧАСТЬ САЙТА-->
+
+	<main>
+		<img src="assets/img/unnamed.jpg" alt="" class="mw-100">
+		<img src="assets/img/unnamedmob.jpg" alt="" class="mw-1001">
+
+
+
+	<h3>Основные понятия FlexBox</h3>
+	<!--
+	<figure>
+		<img  src="assets/img/box-model.png" class="minimized" alt="клик для увеличения">
+		<figcaption>
+			
+			РИС. 1. МОДЕЛЬ FLEXBOX
+		</figcaption>
+	</figure>  							-->
+	
+	
+	<p>CSS модуль раскладки Flexible Box, обычно называемый флексбокс или flexbox или просто flex (флекс), был разработан как модель одномерного-направленного макета и как один из методов распределения пространства между элементами в интерфейсе, с мощными возможностями выравнивания. В этой главе дается краткое описание основных функций flexbox, которые мы рассмотрим более подробно в остальных руководствах.</p>
+	<p>
+		Когда мы описываем flexbox как одномерно-направленный, мы  имеем в виду, что flexbox имеет дело с макетом в одной плоскости за раз – либо в виде строки, либо в виде столбца. Как альтернативу можно упомянуть двумерную модель CSS Grid Layout, которая управляет и столбцами и строками одновременно.
+	</p>
+
+	<h3>Главная ось</h3>
+	<p>
+		Главная ось определяется свойством <h10>flex-direction</h10>, которая может принимать одно из следующих значений:
+	</p>
+	<ul>
+		<li>row</li>
+		<li>row-reverse</li>
+		<li>column</li>
+		<li>column-reverse</li>
+	</ul>
+
+<p>Если вы выберете <h10>row</h10> или <h10>row-reverse</h10>, ваша главная ось будет проходить в горизонтальном направлении (inline direction).</p>
+<img src="assets/img/row.png" class="minimized" alt="клик для увеличения">
+
+<p>
+	Если вы выберете <h10>column</h10> или <h10>column-reverse</h10>, ваша главная ось будет проходить в вертикальном направлении (block direction).
+</p>
+<img src="assets/img/Colum.png" class="minimized" alt="клик для увеличения">
+
+<h3>Побочная ось</h3>
+<p>Побочная ось проходит перпендикулярно главной оси, поэтому, если свойство <h10>flex-direction</h10> (главная ось) задано как <h10>row</h10> или <h10>row-reverse</h10>, побочная ось будет проходить в вертикальном направлении.</p>
+
+<img src="assets/img/CrossAxisrow.png" class="minimized" alt="клик для увеличения">
+
+<p>
+	Если свойство<h10>flex-direction</h10> задано как <h10>column</h10> или <h10>column-reverse</h10>, побочная ось будет проходить в горизонтальном направлении.
+</p>
+<img src="assets/img/CrossAxiscolumn.png" class="minimized" alt="клик для увеличения">
+<p>
+	Понимание того, с какой осью вы работаете (главная или побочная) очень важно для дальнейшего изучения Flexbox.
+</p>
+
+<img src="assets/img/gif/maincros.png" class="minimized" alt="клик для увеличения">
+
+<h3>Начало и конец строки</h3>
+<p>Важно понимать, что flexbox не делает никаких предположений о режиме написания документа. Раньше CSS был сильно ориентирован на горизонтальный режим и режим письма слева направо. Современные методы верстки охватывают полный диапазон режимов письма, и поэтому мы больше не предполагаем, что строка текста будет начинаться в верхнем левом углу документа и будет проходить по направлению к правой стороне, а новые строки будут появляться одна под другой.</p>
+
+<p>Если свойству <h10>flex-direction</h10> задано значение row и вы работаете с английским языком, то начало главной оси будет слева, а конец главной оси – справа.</p>
+
+<img src="assets/img/MainAxisrow.png" class="minimized" alt="клик для увеличения">
+
+<p>Если бы вы работаете с арабским языком, то начало главной оси будет справа, а конец главной оси – слева.</p>
+<img src="assets/img/MainAxisrowArabic.png" class="minimized" alt="клик для увеличения">
+
+<p>В обоих случаях начало побочной оси находится вверху flex контейнера, а конец – внизу, поскольку оба языка имеют режим горизонтальной записи.
+
+Спустя некоторое время становится естественным думать о начале и конце оси, а не о левом и правом краях. Это будет полезно для вас при работе с другими методами, такими как CSS Grid Layout, которые следуют тем же шаблонам.</p>
+
+		<!--Кнопка наверх-->
+<div id="upbutton"></div>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 300);
+    });
+</script>
+
+
+<style>
+  #upbutton {
+    background: url("assets/img/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+<!--конец Кнопка наверх-->
+
+
+		
+	</main>
+			<!--Подвал сайта-->
+<footer>
+	<nav1>
+				<a href="index.html">ГЛАВНАЯ</a>
+				<a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+					<a href="2.html">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+				
+				
+				<a href="dopinfo.html">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+				<a href="">КОНТАКТЫ</a>
+				<a href="O_kyrse.html">О КУРСЕ</a>
+				
+	</nav1>
+
+	<!--Лого в подвале сайта для мобильной версии-->
+<div class="logofooter">
+		<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png"></a>
+	</div>
+<!-- завершение лого в подвале сайта для мобильной версии-->
+
+	<div class="logofooter">
+		<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png"></a>
+	</div>
+<div class="social">
+	<a href="#"><img src="assets/img/em.png" alt=""></a>
+	<a href="#"><img src="assets/img/face.png" alt=""></a>
+	<a href="#"><img src="assets/img/goo.png" alt=""></a>
+	<a href="#"><img src="assets/img/inst.png" alt=""></a>
+</div>
+
+
+
+
+
+ <div class="Copyright">
+ Copyright &copy; Alexey Terletsky 2020  Все права защищены
+ </div>
+</footer>
+
+
+
+
+	
+</body>
+</html>

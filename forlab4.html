@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h3>Результат</h3>
+<div class="output" style="min-height:250px; "></div>
+<h3>Редактируемый код</h3>
+
+
+<textarea id="code" class="playable-code" style="min-height: 500px; width: 85%">
+  </textarea>
+
+<div class="controls">
+  <input id="reset" type="button" value="Сбросить">
+  <input id="solution" type="button" value="Показать решение">
+</div>
+        
+        
+<script>
+var textarea = document.getElementById('code');
+var reset = document.getElementById('reset');
+var solution = document.getElementById('solution');
+var output = document.querySelector('.output');
+var code = textarea.value;
+var userEntry = textarea.value;
+
+function updateCode() {
+  output.innerHTML = textarea.value;
+}
+
+reset.addEventListener('click', function() {
+  textarea.value = code;
+  userEntry = textarea.value;
+  solutionEntry = htmlSolution;
+  solution.value = 'Показать решение';
+  updateCode();
+});
+
+solution.addEventListener('click', function() {
+  if(solution.value === 'Показать решение') {
+    textarea.value = solutionEntry;
+    solution.value = 'Спрятать решение';
+  } else {
+    textarea.value = userEntry;
+    solution.value = 'Показать решение';
+  }
+  updateCode();
+});
+
+var htmlSolution = '<iframe width="420" height="315" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allowfullscreen>\n</iframe>\n\n<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2422.3374831755264!2d39.6147305161795!3d52.61774517983274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413a165e6d4defad%3A0x69885d77fd09d408!2z0JvQuNC_0LXRhtC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0L_QtdC00LDQs9C-0LPQuNGH0LXRgdC60LjQuSDRg9C90LjQstC10YDRgdC40YLQtdGCINC40LwuINCfLtCfLiDQodC10LzQtdC90L7QstCwLdCi0Y_QvS3QqNCw0L3RgdC60L7Qs9C-LCDQm9CT0J_Qow!5e0!3m2!1sru!2sru!4v1587998192587!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
+var solutionEntry = htmlSolution;
+
+textarea.addEventListener('input', updateCode);
+window.addEventListener('load', updateCode);
+
+// остановка табуляции клавиш из текстовой области и
+// заставить вместо этого написать вкладку в позиции каретки
+
+textarea.onkeydown = function(e){
+  if (e.keyCode === 9) {
+    e.preventDefault();
+    insertAtCaret('\t');
+  }
+
+  if (e.keyCode === 27) {
+    textarea.blur();
+  }
+};
+
+function insertAtCaret(text) {
+  var scrollPos = textarea.scrollTop;
+  var caretPos = textarea.selectionStart;
+
+  var front = (textarea.value).substring(0, caretPos);
+  var back = (textarea.value).substring(textarea.selectionEnd, textarea.value.length);
+  textarea.value = front + text + back;
+  caretPos = caretPos + text.length;
+  textarea.selectionStart = caretPos;
+  textarea.selectionEnd = caretPos;
+  textarea.focus();
+  textarea.scrollTop = scrollPos;
+}
+
+// Обновляйте сохраненный код пользователя каждый раз, когда пользователь обновляет код области текста
+
+textarea.onkeyup = function(){
+  // Мы хотим сохранить состояние только тогда, когда отображается код пользователя
+  //не решение, поэтому решение не сохраняется поверх кода пользователя
+  if(solution.value === 'Показать решение') {
+    userEntry = textarea.value;
+  } else {
+    solutionEntry = textarea.value;
+  }
+
+  updateCode();
+};
+</script>
+        
+    
+</body>
+</html>

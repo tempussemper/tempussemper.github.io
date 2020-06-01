@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Flexbox Alignment: centering a box</title>
+
+  <style>
+    body {
+      font-size: : 1.2em ;
+      font-family: 'Montserrat', sans-serif;
+      margin: 20px;
+      padding: 0;
+    }
+
+    textarea {
+      font-family: monospace;
+      display: block;
+      margin-bottom: 10px;
+      background-color: #F4F7F8;
+      border: none;
+      border-left: 6px solid #558ABB;
+      color: #4D4E53;
+      width: 90%;
+      max-width: 700px;
+      padding: 10px 10px 0px;
+      font-size: 90%;
+    }
+
+    textarea:nth-of-type(1) {
+      height: 200px
+    }
+
+    textarea:nth-of-type(2) {
+      height: 200px
+    }
+
+
+
+p{
+
+text-align: left;
+color:#003559;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;      
+font-weight: bold;
+}
+
+
+
+
+    .playable-buttons {
+      text-align: justify;
+      width: 90%;
+      max-width: 700px;
+      padding: 5px 10px 5px 26px;
+      font-size: 100%;
+    }
+
+    section {
+      margin: 20px 20px -300px 20px;
+      height: 500px;
+      width: 90%;
+      max-width: 900px;
+      border: 1px solid #4D4E53;
+      border-radius: 2px;
+      padding: 10px 14px 10px 10px;
+      margin-bottom: 10px;
+    }
+
+    section input {
+      display: block;
+      margin: 5px;
+    }
+
+    .box {
+      width: 500px;
+      height: 300px;
+      border: 2px dotted rgb(96, 139, 168);
+    }
+
+    .box>* {
+      border: 2px solid rgb(96, 139, 168);
+      border-radius: 5px;
+      background-color: rgba(96, 139, 168, .2);
+    }
+  </style>
+
+  <style class="editable">.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box div {
+  width: 100px;
+  height: 100px;
+}
+      </style>
+
+
+<body>
+
+  <p>
+   Редактирование HTML кода
+ </p>
+  <textarea id="code" class="playable-html" style="height: 800px" >
+   &ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+&ltdiv class="ex1">
+&ltul>
+  &ltli>
+    &lta href="#">Главная&lt/a>
+  &lt/li>
+  &ltli>
+    &lta href="#">Наши работы&lt/a>
+  &lt/li>
+  &ltli>
+    &lta href="#">Представительство в Москве&lt/a>
+  &lt/li>
+&lt/ul>
+  &ltp>&ltkbd>li {flex-grow: 0;}&lt/kbd>&lt/p>
+&lt/div>
+&ltdiv class="ex2">
+&ltul>
+  &ltli>
+    &lta href="#">Главная&lt/a>
+  &lt/li>
+  &ltli>
+    &lta href="#">Наши работы&lt/a>
+  &lt/li>
+  &ltli>
+    &lta href="#">Представительство в Москве&lt/a>
+  &lt/li>
+&lt/ul>
+  &ltp>&ltkbd>li {flex-grow: 1;}&lt/kbd>&lt/p>
+&lt/div>
+&ltdiv class="ex3">
+&ltul>
+  &ltli>
+    &lta href="#">Главная&lt/a>
+  &lt/li>
+  &ltli>
+    &lta href="#">Наши работы&lt/a>
+  &lt/li>
+  &ltli>
+    &lta href="#">Корзина&lt/a>
+  &lt/li>
+&lt/ul>
+  &ltp>&ltkbd>li:last-child {flex-grow: 1;}&lt/kbd>&lt/p>
+&lt/div>
+  </textarea>
+
+
+<br>
+<p>
+  Редактирование CSS
+</p>
+<textarea class="playable-css" style="height: 800px">
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:500&subset=cyrillic');
+* {box-sizing: border-box; margin: 0}
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  background: #FCDED4; 
+  width: 800px;
+  margin: 50px auto 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  white-space: nowrap;
+  padding: 10px 30px;
+  color: #231F21;
+}
+li {
+  text-align: center;
+  border-right: 2px solid;  
+  margin: 4px 0;
+}
+li:first-child {
+  border-left: 2px solid;
+}
+p {
+  text-align: left;
+  margin-bottom: 40px;
+}
+.ex2 li {
+  flex-grow: 1; 
+}
+.ex3 li:last-child {
+  flex-grow: 1; 
+  text-align: right;
+}
+.ex3 li:last-child a {
+  display: inline-block;
+}
+.ex3 li:last-child a:before {
+  content: "\f290";
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+</textarea>
+<br>
+<p>
+Результат отображения браузером
+</p>
+  <section><div class="box">
+  <div></div>
+</div>
+      </section>
+
+
+
+
+<!--&lt-->
+
+
+  <div class="playable-buttons">
+    <input id="reset" type="button" value="Вернуть исходное состояние">
+  </div>
+
+
+<script>
+  var section = document.querySelector('section'); //Пременная section 
+
+                                                    //возвращаем section начальное значение 
+  var editable = document.querySelector('.editable');
+  var textareaHTML = document.querySelector('.playable-html');
+  var textareaCSS = document.querySelector('.playable-css');
+  var reset = document.getElementById('reset');
+  var htmlCode = textareaHTML.value;
+  var cssCode = textareaCSS.value;
+
+  function fillCode() {
+    editable.innerHTML = textareaCSS.value;   //разрешение редактирования элемента
+    section.innerHTML = textareaHTML.value;
+  }
+
+  reset.addEventListener('click', function () { //Браузерные события 
+    textareaHTML.value = htmlCode;
+    textareaCSS.value = cssCode;
+    fillCode();
+  });
+
+  textareaHTML.addEventListener('input', fillCode);
+  textareaCSS.addEventListener('input', fillCode);
+  window.addEventListener('load', fillCode);
+</script>
+
+
+</body></html>

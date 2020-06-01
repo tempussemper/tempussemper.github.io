@@ -1,0 +1,1429 @@
+a11y-label/*основной цвет для шрифта #003559	*/
+
+nav a.icon{      /* в обычном режиме не отображается кнопка*/
+display: none;
+}
+
+
+object{
+	margin: 5px 260px 20px;
+	max-width: 50%;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+main >h3> h10{
+color: #003559;
+    font-weight: bold;
+    
+    background-color: #ebeff1;
+    border-radius: 5px;
+    border-style: ;
+	
+}
+
+
+td> a{
+color: #003559;
+background-color: #fdc8c8;
+}
+
+a.new{
+	color: #003559;
+	background-color: #fdc8c8;
+}
+
+
+code>a{
+	color: #003559;
+}
+
+
+:not(pre)>code, :not(pre)>code {
+    background-color: #bbb;
+    background-color: rgba(220, 96, 96, 0.5);
+    color: #003559;
+    border-radius: 2px;
+    box-decoration-break: clone;
+     font-family: 'Montserrat', sans-serif;
+    padding: 0 2px;
+    word-wrap: break-word;}
+
+
+
+
+
+
+
+audio{
+	display: flex;
+	margin: 5px 260px 20px;
+}
+
+video{
+	display: flex;
+	margin: 5px 260px 20px;
+	max-width: 40%;
+	max-height: 40%;
+	border-radius: 2%;
+}
+video:hover{	
+}
+
+p>a:hover{
+color:#FFCC00;
+}
+
+table.w3-table-all {
+	margin: 5px 260px 20px;
+    max-width: 80%;
+
+
+}
+
+td{
+	background:#f9f5f5;
+}
+th{
+	background:#ccc ;
+	border-radius: 2px;
+	width: 15px;
+}
+
+.w3-table-all {
+	border-radius: 7px;
+    border: 2px solid #ccc;
+}
+.w3-table, .w3-table-all {
+	border-collapse: separate;
+    border-spacing: 10px;
+    width: 80%;
+    display: table;
+
+}
+
+
+
+
+table{
+	margin: 15px 250px 20px;
+    text-align: justify;
+    color: #003559;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section {
+	display: block;
+    width: 90%;
+    max-width: 700px;
+    border: 1px solid #4D4E53;
+    border-radius: 2px;
+    padding: 10px 14px 10px 10px;
+    margin-bottom: 10px;
+    margin: 5px 260px 20px;
+}
+
+.box {
+	display: flex;
+    width: 500px;
+    border: 2px dotted rgb(96, 139, 168);
+}
+.box>* {
+    border: 2px solid rgb(96, 139, 168);
+    border-radius: 5px;
+    background-color: rgba(96, 139, 168, .2);
+}
+ 
+/*Стиль для примера*/
+
+.a11y-label {
+    margin: 5px 260px 20px;
+    text-align: left;
+    font-size: 0.7rem;
+    width: 98%;
+}
+ .playable-code {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+    background-color: #f4f7f8;
+    border: none;
+    border-left: 6px solid #558abb;
+    border-width: medium medium medium 6px;
+    color: #4d4e53;
+    height: 150px;  
+    margin: 5px 260px 20px;
+    padding: 10px 10px 0;
+}
+
+.Flex_justify{
+ margin: 5px 260px 20px;
+}
+
+
+iframe{
+	display: flex;
+	
+	margin: 5px 260px 20px;
+}
+
+textarea {
+    font-family: monospace;
+    display: block;
+    margin-bottom: 10px;
+    height: 160px;
+    background-color: #F4F7F8;
+    border: none;
+    border-left: 6px solid #558ABB;
+    color: #4D4E53;
+    width: 90%;
+    max-width: 700px;
+    padding: 10px 10px 0px;
+    font-size: 90%;
+}
+
+.playable-buttons {
+    text-align: right;
+    width: 90%;
+    max-width: 700px;
+    padding: 5px 10px 5px 26px;
+    font-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+textarea {
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	margin: 5px 260px 20px;
+    webkit-writing-mode: horizontal-tb !important;/*направление текста*/
+    text-rendering: auto;/*браузер автоматически рендерит текст*/
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal; /*использовать отриц значение*/
+    word-spacing: normal;		/*расстояние между словами*/
+    text-transform: none;   /*регистр букв*/
+    text-indent: 0px;
+    text-shadow: none;
+    display: Flex;
+    text-align: start;
+    webkit-appearance: textarea;/*для сафари браузера отображать элемент как поле текст*/
+    background-color: #ebeff1;
+    webkit-rtl-ordering: logical; /*определяет направление текста*/
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+    border-image: initial;
+    padding: 2px;
+}
+
+
+
+.controls{
+	margin: 5px 260px 20px;
+}
+
+input {
+text-decoration: none;
+outline: none;
+display: inline-block;
+padding: 15px 30px;
+margin: 10px 20px;
+border-radius: 10px;
+box-shadow: 0 0 40px 40px  inset, 0 0 0 0 ;
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+letter-spacing: 2px;
+color: white;
+transition: .15s ease-in-out;
+}
+
+
+playable-buttons{
+	 display: inline-block;
+	 color: 	#FFCC00;
+	 margin: 5px 260px 20px;
+
+
+}
+
+.output{
+	margin: 5px 260px 20px;
+}
+
+input[type="button" i] {
+margin: 5px 260px 20px;
+outline: none;
+display: inline-block;
+padding: 15px 30px;
+margin: 10px 20px;
+border-radius: 10px;
+box-shadow: 0 0 40px 40px #1f4c95 inset, 0 0 0 0 #FFFFCC;
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+letter-spacing: 2px;
+color: white;
+transition: .15s ease-in-out;
+}
+
+.controls :hover{
+	color: 	#FFCC00;
+	outline: none;
+    transition: .4s ease-in-out;
+	transform: translateY(-7px);
+	cursor: pointer;
+}
+
+
+input[type="color" i] {
+   width: 50px;
+    height:50px;
+    background-color: buttonface;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+    border-image: initial;
+    padding: 1px 2px;
+}
+
+#box {
+    width: 500px;
+    height: 200px;
+    border: 2px solid rgb(245, 220, 225);
+    padding: 4px 6px;
+    font-size:  16px ;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#box:hover{
+	color: #99e8ee	;
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+	text-decoration: none;			/*стиль для ссылок*/
+
+}
+
+/* СТИЛЬ ДЛЯ ПАРАГРАФА*/
+main >p{
+
+margin: 15px 250px 20px;
+text-align: justify;
+color:#003559;
+
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;      
+font-weight: bold;
+
+   
+}
+
+main >#Primer{							/*Стиль для примера*/
+	margin: 15px 250px 20px;
+text-align: justify;
+color:#003559;
+
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;      
+font-weight: bold;
+}
+
+main >em{
+	margin: 15px 250px 20px;
+text-align: justify;
+color:#003559;
+
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;      
+font-weight: bold;
+}
+
+main >h3{
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	margin: 5px 250px 20px;
+	text-align:justify;
+	color:#003559;
+	font-weight: bold;
+	font-size: 35px;
+
+
+}
+
+
+main >ul>li{
+	list-style-type:  disc;
+	color:#003559;
+}
+/*main >.imggif{
+	display: flex;
+	max-width: 50%;
+	margin: 5px 260px 20px;
+
+}
+
+
+/*main >.imggif:hover{ 		/*увелечение при наведении
+	transform: scale(1.5);
+}*/
+
+
+
+
+/*СТИЛЬ ДЛЯ УВЕЛЕЧЕНИЯ ПО ЩЕЛЧКУ*/
+
+
+/* картинка на странице */
+.minimized {
+  width: 50%;
+  margin: 5px 260px 20px;
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+ 
+ .minimized1 {
+    width: 15%;
+    margin: 5px 230px 20px;
+    cursor: pointer;
+    border: 1px solid #FFF;
+}
+
+.minimized:hover {
+  border: 2px solid #6633FF;
+}
+
+
+ .img4{
+	  margin: 5px 260px 20px;
+}
+
+
+/*Увелечение текста при наведении на главной странице*/
+.O_kyrse :hover{
+	  transform: scale(1.1)
+}
+
+.Form_comp :hover{
+	  transform: scale(1.1)
+}
+
+.Obr_sviaz :hover{
+	  transform: scale(1.1)
+}
+.Progr_kursa:hover{
+	  transform: scale(1.1)
+}
+
+
+.Result:hover{
+	  transform: scale(1.1)
+}
+
+.Trebov:hover{
+	  transform: scale(1.1)
+}
+
+
+
+
+
+
+
+
+.minimized:hover {
+  border: 2px solid #6633FF;
+}
+ 
+/* увеличенная картинка */
+#magnify {
+  display: none;
+ 
+  /* position: absolute; upd: 24.04.2020 */
+  position:fixed;
+  max-width: 800px;   /*размер увеличивающейся картинки*/
+  height: auto;
+  z-index: 9999;
+}
+ 
+#magnify img {
+  width: 100%;
+}
+ 
+/* затемняющий фон */
+#overlay {
+  display: none;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 9990;
+}
+ 
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+ 
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+ 
+@keyframes rota {
+ 25% { transform: rotate(360deg); }
+}
+ 
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+ 
+
+
+
+/*КОНЕЦ СТИЛЯ ДЛЯ УВЕЛЕЧЕНИЯ ПО ЩЕЛЧКУ*/
+
+
+
+
+
+
+
+main >ul{
+	margin: 15px 300px 20px;
+text-align: justify;
+color:#003559;
+list-style-type:square;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;      
+font-weight: bold;
+
+}
+
+main > p > h10{
+	color: #003559;
+	font-weight:bold;
+	font-size: 20px;
+	background-color: #ebeff1;
+	border-radius: 5px;
+	border-style: 
+}
+ul> li> h10{
+	color: #003559;
+	font-weight:bold;
+	font-size: 20px;
+	background-color: #ebeff1;
+	border-radius: 5px;
+	border-style:
+
+}
+
+pre{
+	display: flex;
+	width: 1000px;
+	font-family: 'Montserrat', sans-serif;
+	word-wrap: break-word;
+	
+	background-color:#ebeff1; 		/*Цвет под цвет гифок*/
+	margin: 5px 260px 20px;
+	font-size:23px;
+	text-align: left;
+	border-style: solid;
+	border-radius: 2%;
+	border-color: #FFFFFF
+}
+
+
+/*li{
+	text-decoration: none;
+	list-style: none;
+}*/
+
+
+
+
+
+
+
+/*стиль текста для страниц курса с текстом*/
+.text{
+	
+	text-align: justify;
+	color:#003559;
+
+
+}
+
+.text >h1{
+	margin-top: 20px;
+	text-align: center;
+}
+.text >p{
+	
+
+margin: 5px 300px 20px;
+text-align: justify;
+color:#003559;
+
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;      
+font-weight: bold;
+}
+
+.text >p >h10{
+	color: #003559;
+	font-weight:bold;
+	font-size: 20px;
+	background-color: #CCCCCC;
+	border-radius: 5px;
+	border-style: 
+}
+
+figure >img{
+	
+    max-width: 30%;
+	
+}
+
+
+
+figure {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+figcaption {
+    clear: both;
+    color: #ababab;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left:50px;
+	margin-right: 50px;
+	margin-bottom:20px;
+    margin-top: 20px;
+    line-height: 1;
+}
+code-toolbar{
+	display: flex;
+	min-width: 50%;
+
+}
+div.code-toolbar {
+    position: relative;
+    width:100%;
+
+}
+div.code-toolbar>.toolbar {
+    position: absolute;
+    top: 0;
+    right: 30px;;
+}
+pre[class*="language-"] {
+    background: #f5f5f5;
+    border: 1px solid #e6e6e6;
+}
+.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted {
+    color: #690;
+}
+
+.token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted {
+    color: #905;
+}
+
+div.code-toolbar>.toolbar a, div.code-toolbar>.toolbar button, div.code-toolbar>.toolbar span {
+    display: block;
+    background: #faf9f8;
+    border: 1px solid #e6e6e6;
+    font-size: .8em;
+    padding: 2px 10px;
+}
+
+/*kbd {
+	color: #003559;
+	font-weight:bold;
+	
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 20px;
+   
+    word-break: keep-all;
+    border: 1px solid #e6e6e6;
+    text-shadow: 0 1px white;
+}*/
+
+
+
+
+
+.text >img{
+	display: flex;
+	text-align: center;
+
+	max-width: 50%;
+
+}
+
+
+
+/*конец стиль текста для страниц курса с текстом*/
+
+
+.mw-100{
+	max-width: 100%;
+}
+.advantages_container{
+	display: flex;
+	justify-content: center;
+}
+
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+h5{
+	text-align: justify;
+	color:#003559;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	
+}
+
+.logo{
+	background: #1e4c96;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo1{
+	display: none;
+	
+}
+
+.graficlogo1{
+	display: none;
+}
+.graficlogo{
+	background: #1e4c96;
+	text-align:center;
+	padding: 5px;
+	max-width: 100%;
+	box-sizing: border-box; /* расчет границ(не залазиет граница на картинку)*/
+}
+
+* { 
+box-sizing: border-box; 
+}
+
+
+
+body {
+  margin: 0;
+}
+
+
+.advantages_item1{
+display: none;
+}
+
+																			/*Выпадающее меню header*/
+  background: radial-gradient(#BFD6E2 1px, rgba(255,255,255,0) 2px);
+  background-size: 10px 10px;
+}
+nav{
+	display: flex;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+
+  text-decoration: none;
+  outline: none;
+  transition: .4s ease-in-out;
+}
+
+
+
+.topmenu {
+  backface-visibility: hidden;
+  background: rgba(255,255,255,.8);
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li > a {
+  font-family: 'Montserrat', sans-serif;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 15px;
+  font-weight: bold;
+  color: #003559;
+  text-transform: uppercase;
+}
+
+
+
+
+.down:after {
+  content: "\f107";
+  margin-left: 8px;
+  font-family: FontAwesome;
+}
+.topmenu li a:hover { 
+	color: #FFCC00; }
+
+
+
+.submenu {
+	font-family: 'Montserrat', sans-serif;
+  background: white;
+  border: 2px solid #003559;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width:300px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+}
+
+.submenu2{
+	font-family: 'Montserrat', sans-serif;
+  background: white;
+  border: 2px solid #003559;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width:300px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+}
+
+
+
+
+
+
+
+.topmenu > li:hover .submenu2{
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
+.submenu2 li a {
+	margin: 3%;
+font-family: 'Montserrat', sans-serif;
+font-weight:bold;									/*Жирный шрифт для выпадающего меню Вводная часть курса*/
+  color: #003559;									
+  font-size: 15px;
+  line-height: 36px;
+  padding: 0 ;
+  
+}
+.submenu2 li a.hover{
+	color: #FFCC00;
+}
+
+
+
+
+
+
+.topmenu > li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
+.submenu li a {
+	margin: 3%;
+font-family: 'Montserrat', sans-serif;
+font-weight:bold;									/*Жирный шрифт для выпадающего меню Вводная часть курса*/
+  color: #003559;									
+  font-size: 15px;
+  line-height: 36px;
+  padding: 0 ;
+  
+}
+.submenu li a.hover{
+	color: #FFCC00;
+}
+
+
+
+
+
+
+
+
+				/*Стиль для меню в хеддере*/
+
+
+
+/*
+nav{
+margin:auto;
+width: 800px;
+height: 50px;
+}
+.topnav{
+padding: 15px;
+	background-color: white;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.topnav a{
+	color: #000;
+	text-align:center;
+	padding: 9px 9px;
+	font-size: 15px;
+}
+
+.topnav a:hover{ /*Изменение цвета при наведении
+	
+	color: 	#FFCC00;
+}
+
+*/
+
+
+.topmenu .icon{
+	display: none;
+}
+
+}
+
+
+.advantages_container{
+	display: flex;
+	justify-content: center;
+}
+
+.advantages{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;   /*в одну строку или в столбец*/
+}
+.advantages_item{
+	width: 30%;
+}
+.gl{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+
+
+
+.content_qwert{
+	font-size: 120%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 960px;
+	margin: 15px auto;
+
+}
+.content_qwert a{
+	font-size: 120%;
+	color: #000;
+	text-align:center;
+	margin:auto;
+	padding: auto;
+	
+}
+.advantages_item a{
+
+	color: #000;
+	outline: none;
+    transition: .4s ease-in-out;
+
+}
+
+
+
+.advantages_item img{
+
+	color: #000;
+	outline: none;
+    transition: .4s ease-in-out;
+
+}
+.content_qwert a:hover{ 													/*Изменение цвета при наведении*/
+	
+	color: 	#FFCC00;
+	outline: none;
+    transition: .4s ease-in-out;
+}
+
+.advantages_item a:hover{ 											/*Изменение цвета при наведении*/
+	
+	color: 	#FFCC00;
+	outline: none;
+    transition: .4s ease-in-out;
+
+}
+
+.advantages_item .image_center:hover{
+	background: #FFCC00;
+	border-radius:100%;
+	outline: none;
+    transition: .4s ease-in-out;
+    transform: scale(1.1)
+}
+
+
+
+
+
+																/*Стиль для подвала сайта*/
+
+
+footer{
+	width: 100%;
+	height: auto;
+	background-color: #1e4c96;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 25px;
+	}
+footer a{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+footer nav1 a:hover{
+	color: #FFCC00;
+	outline: none;
+    transition: .4s ease-in-out;
+}
+.logofooter	{
+	background-color: #1e4c96;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.social img{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.social img:hover{
+	background: #FFCC00;
+	border-radius: 50%;
+	outline: none;
+    transition: .4s ease-in-out;
+}			
+										
+
+
+
+
+}
+											/*Стиль для  устройств с разрешением экрана меньше 768точек*/
+
+@media screen and (max-device-width:768px){
+
+nav{
+	display: none;
+}
+
+.advantages{
+		flex-direction: column;
+}
+
+.advantages_item{
+	width:100%;
+}
+
+.graficlogo {
+	background-color: red;
+}
+
+
+.topmenu li:not(:first-child){
+	display: none;
+}
+
+nav a.menu{
+		display: block;
+	float: right;
+	margin-top: -17px;
+}
+
+nav a.icon {
+	display:block;
+	position: absolute;
+	left: 900px;
+	font-size: 4em;
+	color: #003559;
+}
+
+nav a{
+	color: #003559;
+	font-family: 'Montserrat', sans-serif;
+ 	height: 60px;
+ 	font-size: 30px;
+}
+
+.topmenu.responsive{
+	position: relative;
+}
+
+.topmenu.responsive.icon{
+	position: relative;
+	right: 0;
+	top: 0;
+}
+	
+.topmenu.responsive ul{
+	float: none;
+	display: block;
+	text-align:center; 
+}
+
+nav ul {
+  list-style: none;
+  margin: 15px 10px 0 0 ;
+  padding: 0;
+}
+
+.advantages_item{
+	width: 30%;
+}
+
+
+}
+
+
+
+
+															/*Стиль для мобильных устройств*/
+
+
+@media screen and (min-device-width:320px) 
+and (max-device-width: 568px) {			
+/*and (min-device-width:320px) 
+and (max-device-width: 568px){*/
+.advantages{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+p{
+	font-size: 200%;
+
+	
+}
+
+
+
+ul{
+	font-size: 150%;
+}
+.mw-100{
+margin:3% auto 0 0;								/*отступ картинки в мобильной версии*/
+
+}
+
+	/*Выпадающее меню по картинке*/
+
+
+/*конец стиля для выпадающего меню по картинке*/
+
+	.advantages_item1{
+		
+
+	}
+
+
+
+					/*изменение цвета меню при переходе в мобильную версию*/
+
+footer{
+	background-color: #9900CC;
+} 
+.logofooter{
+	background-color: #9900CC;
+}
+
+
+.social{
+	display: none;
+}
+.image_center{
+object-fit: scale-down;
+}
+
+.advantages_item{
+	display: none;
+}
+
+.advantages_item1{
+	display:block;
+	position: relative;
+	left: 230px;
+
+    
+	width: 30%;
+
+	/*text-align: center;*/
+
+
+
+}
+/* Убираем стандартный маркер details summary */
+details summary::-webkit-details-marker {
+  display: none
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+  list-style: none;
+}
+.logo{
+	display: none;
+}
+.graficlogo{
+	display: none;
+}
+.logo1{
+	display: block;
+}
+.graficlogo1{
+	display: block;
+}
+
+/*Изменение логотипа для мобильной версии*/
+.logo1{
+	background:#9900CC;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.graficlogo1{
+	text-align:center;
+	padding: 5px;
+	max-width: 100%;
+	box-sizing: border-box; /* расчет границ(не залазиет граница на картинку)*/
+	background:#9900CC;
+}
+
+figure >img {
+max-width: 90%;
+}
+
+
+
+
+/*иконка*/
+
+.topmenu li:not(:first-child){
+	display: none;
+	}
+
+	nav a.menu{
+		display: block;
+	float: right;
+	margin-top: -17px;
+	
+	
+	}
+
+nav a.icon {
+
+display:block;
+	position: absolute;
+	left: 900px;
+	font-size: 4em;
+	color: #003559;
+
+}
+nav a{
+
+	color: #003559;
+	 font-family: 'Montserrat', sans-serif;
+  height: 60px;
+  font-size: 30px;
+}
+
+
+	
+
+	.topmenu.responsive{
+		position: relative;
+	}
+	.topmenu.responsive.icon{
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+	.topmenu.responsive ul{
+		float: none;
+		display: block;
+		text-align:center; 
+	}
+nav ul {
+  list-style: none;
+  margin: 15px 10px 0 0 ;
+  padding: 0;
+}
+.minimized {
+    width: 50%;
+    margin: 5px 230px 20px;
+    cursor: pointer;
+    border: 1px solid #FFF;
+}
+
+main>h3{
+	font-size: 70px;
+}
+
+
+pre{
+	display: flex;
+	background-color:#ebeff1; 		/*Цвет под цвет гифок*/
+	margin: auto;
+	width: 600px;
+	white-space: normal;
+	font-size:40px;
+	word-wrap: break-word;
+	text-align: justify;
+	font-weight: bold;
+	border-style: solid;
+	border-radius: 2%;
+	border-color: #FFFFFF
+}
+
+
+h5{
+	text-align: justify;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	width: 500px;
+	margin: 10px -100px 20px -100px;
+}
+
+h2{
+margin: 10px -100px 20px -100px;	
+}
+
+h6{
+	text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 500px;
+    margin: auto;
+}
+
+
+h1{
+	text-align: justify;
+	font-family: 'Montserrat', sans-serif;
+	width: 500px;
+margin: auto;
+}
+
+iframe{
+	  margin: 5px 230px 20px;
+	width: 75%;
+}
+
+
+.Flex_justify{
+	margin: 5px 100px 20px;
+}
+table.w3-table-all {
+	margin: 5px 260px 20px;
+    max-width: 120px;
+    border-radius: 2px;
+}
+
+audio {
+	width: 500px;
+	
+}
+
+
+video{
+	max-width: 70%;
+	
+	margin: 20px 180px 20px;
+}
+
+}

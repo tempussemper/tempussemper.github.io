@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Cправка HTML Video/audio</title>
+	<link rel="stylesheet" href="assets/css/style.css">	
+	<link rel="stylesheet" href="assets/css/@media.css">	
+	<link rel="icon" href="assets/img/internetFAV.png" type="image/x-icon">     <!--Фавикон-->
+							<!--подключаем СSS файл-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--подключаем Шрифт-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script type="text/javascript" src="assets/js/script.js"></script>										<!--подключаем джава файл-->
+
+</head>
+<body>
+				<!--Голова сайта-->
+	<header>
+		<!--Логотип для мобильной версии-->
+		<div class="logo1">
+			<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png" alt="logo1"></a>  							<!--Логотип-->
+		</div>
+
+
+		
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png" alt="logo"></a>  							<!--Логотип-->
+		</div>
+		<!--выпадающее меню-->
+<nav>
+	<a id="menu" href="#" class="icon">&#9776;</a>	
+	<ul class="topmenu" id="myTopnav">
+	<li><a href="index.html" >ГЛАВНАЯ</a></li>
+	<li><a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+		<ul class="submenu">
+			<li><a href="Ssilka.html"> 1.Формирование контента и гиперссылки</a></li>
+			<li><a href="GraficaHTML.html">2.Графика в HTML</a></li>
+			<li><a href="Object.html">3.Вставка объектов</a></li>
+			<li><a href="tablCss.html">4.Таблицы стилей</a></li>
+			<li><a href="blochi.html">5.Блочная верстка</a></li>
+			<li><a href="Multimedia.html">6.Элементы мультимедиа</a></li>
+		</ul></li>
+		<li><a href="2.html"class="button">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+			<ul class="submenu">
+				<li><a href="1.OsnPon.html">1.Основные понятия Flex-технологий</a></li>
+				<li><a href="Flex_CONT.html">2.Flex-контейнер</a></li>
+				<li><a href="Flex_justify.html">3.Flex-элементы</a></li>
+				
+				<li><a href="Flex_Order.html">4.Порядок отображения flex-элементов и ориентация</a></li>
+			
+				
+				<li><a href="Flexibility.html">5.Гибкость flex-элементов</a></li>
+				<li><a href="Justify.html">6.Выравнивание</a></li>
+
+					</ul></li>
+					<li><a href="Praktika.html"class="button">ПРАКТИЧЕСКИЕ РАБОТЫ</a>
+					<ul class="submenu2">
+						<li><a href="Lab1.html">Практическая работа №1</a></li>
+						<li><a href="Lab2.html">Практическая работа №2</a></li>
+					<li><a href="Lab3.html">Практическая работа №3</a></li>
+				<li><a href="Lab4.html">Практическая работа №4</a></li>
+			<li><a href="Lab5.html">Практическая работа №5</a></li></ul></li>
+		<li><a href="dopinfo.html"class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+			<ul class="submenu2">
+				<li><a href="HTML.html"class="button">Начало работы с HTML </a></li></li>
+				<li><a href="Color.html"class="button">Цвет в web</a>
+				
+				<li><a href="GIF.html"class="button">FlexBox визуализация через GIF</a></li></ul></li>
+			<li><a href="Contacts.html"class="button">КОНТАКТЫ</a></li>
+			<li><a href="O_kyrse.html"class="button">О КУРСЕ </a></li>
+
+	</ul>
+
+</nav>
+	</header>
+					<!--Основная часть сайта-->
+
+<main>
+	<img src="assets/img/unnamed.jpg" alt="" class="mw-100"> 
+	<img src="assets/img/unnamedmob.jpg" alt="" class="mw-1001"> 
+	<h3>HTML Аудио/Видео DOM Ссылки</h3>
+	<p>
+В модели HTML5 DOM есть методы, свойства и события для <h10>&ltaudio></h10> и <h10>&ltvideo></h10> Элементы.
+
+Эти методы, свойства и события позволяют манипулировать элементами <h10>&ltaudio></h10> и <h10>&ltvideo></h10> с помощью JavaScript.
+<h10>&lt/video></h10>
+<h3>
+	HTML Аудио и Видео методы
+</h3>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:25%">Метод</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td>addTextTrack()</td>
+<td>Добавление новой текстовой дорожки в аудио/видео</td>
+</tr>
+<tr>
+<td>canPlayType()</td>
+<td>Проверяет, может ли обозреватель воспроизвести указанный тип аудио/видео</td>
+</tr>
+<tr>
+<td>load()</td>
+<td>Повторная загрузка элемента аудио/видео</td>
+</tr>
+<tr>
+<td>play()</td>
+<td>Начинает воспроизведение аудио/видео</td>
+</tr>
+<tr>
+<td>pause()</td>
+<td>Приостанавливает воспроизведение аудио/видео в текущий момент</td>
+</tr>
+</tbody></table>
+
+<h3>
+	Свойства аудио/видео в формате HTML
+</h3>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:25%">Свойство</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td>audioTracks</td>
+<td>Возвращает объект аудиотракклист, представляющий доступные звуковые дорожки</td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>Устанавливает или возвращает ли аудио/видео должен начать воспроизведение, как только он загружается</td>
+</tr>
+<tr>
+<td>buffered</td>
+<td>Возвращает объект тимеранжес, представляющий буферизованные части аудио/видео</td>
+</tr>
+<tr>
+<td>controller</td>
+<td>Возвращает объект медиаконтроллер, представляющий текущий контроллер мультимедиа аудио/видео</td>
+</tr>
+<tr>
+<td>controls</td>
+<td>Устанавливает или возвращает ли аудио/видео должны отображать элементы управления (например, воспроизведение/пауза и т.д.)</td>
+</tr>
+<tr>
+<td>crossOrigin</td>
+<td>Задает или возвращает настройки перекрестия аудио/видео</td>
+</tr>
+<tr>
+<td>currentSrc</td>
+<td>Возвращает URL-адрес текущего аудио/видео</td>
+</tr>
+<tr>
+<td>currentTime</td>
+<td>Устанавливает или возвращает текущую позицию воспроизведения в аудио/видео (в секундах)</td>
+</tr>
+<tr>
+<td>defaultMuted</td>
+<td>Устанавливает или возвращает ли аудио/видео должно быть отключено по умолчанию</td>
+</tr>
+<tr>
+<td>defaultPlaybackRate</td>
+<td>Устанавливает или возвращает скорость воспроизведения аудио/видео по умолчанию</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>Возвращает длину текущего аудио/видео (в секундах)</td>
+</tr>
+<tr>
+<td>ended</td>
+<td>Возвращает значение, закончилось ли воспроизведение аудио/видео</td>
+</tr>
+<tr>
+<td>error</td>
+<td>Возвращает объект медиаеррор, представляющий состояние ошибки аудио/видео</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>Устанавливает или возвращает значение, если аудио/видео должно начинаться снова после завершения</td>
+</tr>
+<tr>
+<td>mediaGroup</td>
+<td>Устанавливает или возвращает группу, к которой принадлежит аудио/видео (используется для связывания нескольких элементов аудио/видео)</td>
+</tr>
+<tr>
+<td>muted</td>
+<td>Задает или возвращает значение, если звук/видео отключен или нет</td>
+</tr>
+<tr>
+<td>networkState</td>
+<td>Возвращает текущее состояние сети аудио/видео</td>
+</tr>
+<tr>
+<td>paused</td>
+<td>Возвращает значение, если аудио/видео приостановлено или нет</td>
+</tr>
+<tr>
+<td>playbackRate</td>
+<td>Устанавливает или возвращает скорость воспроизведения аудио/видео</td>
+</tr>
+<tr>
+<td>played</td>
+<td>Возвращает объект тимеранжес, представляющий воспроизводимые части аудио/видео</td>
+</tr>
+<tr>
+<td>preload</td>
+<td>Устанавливает или возвращает ли аудио/видео должно быть загружено при загрузке страницы</td>
+</tr>
+<tr>
+<td>readyState</td>
+<td>Возвращает текущее состояние готовности аудио/видео</td>
+</tr>
+<tr>
+<td>seekable</td>
+<td>Возвращает объект тимеранжес, представляющий поисковые части аудио/видео</td>
+</tr>
+<tr>
+<td>seeking</td>
+<td>Возвращает ли пользователь в настоящее время ищет в аудио/видео</td>
+</tr>
+<tr>
+<td>src</td>
+<td>Устанавливает или возвращает текущий источник аудио/видео элемента</td>
+</tr>
+<tr>
+<td>startDate</td>
+<td>Возвращает объект даты, представляющий текущее смещение времени</td>
+</tr>
+<tr>
+<td>textTracks</td>
+<td>Возвращает объект тексттракклист, представляющий доступные текстовые дорожки</td>
+</tr>
+<tr>
+<td>videoTracks</td>
+<td>Возвращает объект видеотракклист, представляющий доступные видеодорожки</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>Устанавливает или возвращает громкость аудио/видео</td>
+</tr>
+</tbody></table>
+
+<h3>События HTML аудио/видео</h3>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:25%">Событие</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td>abort</td>
+<td>Срабатывает при прерывании загрузки аудио/видео</td>
+</tr>
+<tr>
+<td>canplay</td>
+<td>Срабатывает, когда браузер может начать воспроизведение аудио/видео</td>
+</tr>
+<tr>
+<td>canplaythrough</td>
+<td>Срабатывает, когда браузер может воспроизводить аудио/видео без остановки для буферизации</td>
+</tr>
+<tr>
+<td>durationchange</td>
+<td>Срабатывает при изменении длительности аудио/видео</td>
+</tr>
+<tr>
+<td>emptied</td>
+<td>Срабатывает, когда текущий плейлист пуст</td>
+</tr>
+<tr>
+<td>ended</td>
+<td>Срабатывает при завершении текущего плейлиста</td>
+</tr>
+<tr>
+<td>error</td>
+<td>Срабатывает, когда произошла ошибка во время загрузки аудио/видео</td>
+</tr>
+<tr>
+<td>loadeddata<</td>
+<td>Срабатывает, когда браузер загрузил текущий кадр аудио/видео</td>
+</tr>
+<tr>
+<td>loadedmetadata</td>
+<td>Срабатывает, когда браузер загружает мета-данные для аудио/видео</td>
+</tr>
+<tr>
+<td>loadstart</td>
+<td>Срабатывает, когда браузер начинает искать аудио/видео</td>
+</tr>
+<tr>
+<td>pause</td>
+<td>Срабатывает, когда аудио/видео было приостановлено</td>
+</tr>
+<tr>
+<td>play</td>
+<td>Срабатывает, когда аудио/видео было запущено или больше не приостановлено</td>
+</tr>
+<tr>
+<td>playing</td>
+<td>Срабатывает при воспроизведении аудио/видео после паузы или остановки для буферизации</td>
+</tr>
+<tr>
+<td>progress</td>
+<td>Срабатывает, когда браузер загружает аудио/видео</td>
+</tr>
+<tr>
+<td>ratechange</td>
+<td>Срабатывает при изменении скорости воспроизведения аудио/видео</td>
+</tr>
+<tr>
+<td>seeked</td>
+<td>Срабатывает, когда пользователь завершает перемещение/пропуск на новую позицию в аудио/видео</td>
+</tr>
+<tr>
+<td>seeking</td>
+<td>Срабатывает, когда пользователь начинает перемещение/пропуск на новую позицию в аудио/видео</td>
+</tr>
+<tr>
+<td><stalled</td>
+<td>Срабатывает, когда обозреватель пытается получить данные мультимедиа, но данные недоступны</td>
+</tr>
+<tr>
+<td>suspend</td>
+<td>Срабатывает, когда обозреватель преднамеренно не получает данные мультимедиа</td>
+</tr>
+<tr>
+<td>timeupdate</td>
+<td>Срабатывает при изменении текущей позиции воспроизведения</td>
+</tr>
+<tr>
+<td>volumechange</td>
+<td>Срабатывает при изменении тома</td>
+</tr>
+<tr>
+<td>waiting</td>
+<td>Срабатывает, когда видео останавливается, потому что он должен буфер следующий кадр</td>
+</tr>
+</tbody></table>
+	
+
+<!-- &lt ДЛЯ ОТОБРАЖЕНИЯ ТЕГОВ  -->
+	</main>
+			<!--Подвал сайта-->
+<footer>
+	<nav1>
+				<a href="index.html">ГЛАВНАЯ</a>
+				<a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+				<a href="2.html">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+				
+				
+				<a href="dopinfo.html">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+				<a href="">КОНТАКТЫ</a>
+				<a href="O_kyrse.html">О КУРСЕ</a>
+				
+	</nav1>
+
+	<!--Лого в подвале сайта для мобильной версии-->
+<div class="logofooter">
+		<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png"></a>
+	</div>
+<!-- завершение лого в подвале сайта для мобильной версии-->
+
+	<div class="logofooter">
+		<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png"></a>
+	</div>
+<div class="social">
+	<a href="#"><img src="assets/img/em.png" alt=""></a>
+	<a href="#"><img src="assets/img/face.png" alt=""></a>
+	<a href="#"><img src="assets/img/goo.png" alt=""></a>
+	<a href="#"><img src="assets/img/inst.png" alt=""></a>
+</div>
+
+
+
+
+ <div class="Copyright">
+ Copyright &copy; Alexey Terletsky 2020  Все права защищены
+ </div>
+</footer>
+
+
+
+
+	
+</body>
+
+
+
+
+<!--Кнопка наверх-->
+<div id="upbutton"></div>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 300);
+    });
+</script>
+
+
+<style>
+  #upbutton {
+    background: url("assets/img/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+<!--конец Кнопка наверх-->
+</html>

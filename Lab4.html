@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Практическая работа №4</title>
+  <link rel="stylesheet" href="assets/css/style.css"> 
+<link rel="icon" href="assets/img/internetFAV.png" type="image/x-icon">     <!--Фавикон-->
+  <!--<link rel="stylesheet" href="assets/css/@media.css">  -->
+              <!--подключаем СSS файл-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--подключаем Шрифт-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/scripts.js"></script>-->
+  <script type="text/javascript" src="assets/js/script.js"></script>  
+                    <!--подключаем джава файл-->
+  <script src="https://code.jquery.com/jquery-git.min.js"></script> <!--подключаем библиотеку jsquary-->
+</head>
+<body>
+        <!--Голова сайта-->
+  <header>
+    <!--Логотип для мобильной версии-->
+    <div class="logo1">
+      <a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png" alt="logo1"></a>                <!--Логотип-->
+    </div>
+
+
+    
+    <div class="logo">
+      <a href="index.html"><img class="graficlogo" src="assets/img/internet1.png" alt="logo"></a>               <!--Логотип-->
+    </div>
+    <!--выпадающее меню-->
+<nav>
+  <a id="menu" href="#" class="icon">&#9776;</a>  
+  <ul class="topmenu" id="myTopnav">
+  <li><a href="index.html" >ГЛАВНАЯ</a></li>
+  <li><a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+    <ul class="submenu">
+      <li><a href="Ssilka.html"> 1.Формирование контента и гиперссылки</a></li>
+      <li><a href="GraficaHTML.html">2.Графика в HTML</a></li>
+     <li><a href="Object.html">3.Вставка объектов</a></li>
+     <li><a href="tablCss.html">4.Таблицы стилей</a></li>
+      <li><a href="blochi.html">5.Блочная верстка</a></li>
+      <li><a href="Multimedia.html">6.Элементы мультимедиа</a></li>
+    </ul></li>
+    <li><a href="2.html"class="button">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+      <ul class="submenu">
+        <li><a href="1.OsnPon.html">1.Основные понятия Flex-технологий</a></li>
+        <li><a href="Flex_CONT.html">2.Flex-контейнер</a></li>
+        <li><a href="Flex_justify.html">3.Flex-элементы</a></li>
+        
+        <li><a href="Flex_Order.html">4.Порядок отображения flex-элементов и ориентация</a></li>
+      
+        
+        <li><a href="Flexibility.html">5.Гибкость flex-элементов</a></li>
+      <li><a href="Justify.html">6.Выравнивание</a></li>
+
+          </ul></li>
+          <li><a href="Praktika.html"class="button">ПРАКТИЧЕСКИЕ РАБОТЫ</a>
+          <ul class="submenu2">
+            <li><a href="Lab1.html">Практическая работа №1</a></li>
+            <li><a href="Lab2.html">Практическая работа №2</a></li>
+          <li><a href="Lab3.html">Практическая работа №3</a></li>
+        <li><a href="Lab4.html">Практическая работа №4</a></li>
+      <li><a href="Lab5.html">Практическая работа №5</a></li></ul></li>
+    <li><a href="dopinfo.html"class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+      <ul class="submenu2">
+        <li><a href="HTML.html"class="button">Начало работы с HTML </a></li></li>
+        <li><a href="Color.html"class="button">Цвет в web</a>
+        
+        <li><a href="GIF.html"class="button">FlexBox визуализация через GIF</a></li></ul></li>
+      <li><a href="Contacts.html"class="button">КОНТАКТЫ</a></li>
+      <li><a href="O_kyrse.html"class="button">О КУРСЕ </a></li>
+
+  </ul>
+
+</nav>
+
+<!--<hr align="center" width=100% size="2" color="#1e4c96" />         Черта отделяющая меню от части сайта-->
+  
+
+  </header>
+
+
+
+                                  <!--ОСНОВНАЯ ЧАСТЬ САЙТА-->
+
+  <main>
+    <img src="assets/img/unnamed.jpg" alt="" class="mw-100">
+    <img src="assets/img/unnamedmob.jpg" alt="" class="mw-1001">
+    
+
+<h3>Практическая работа №4</h3>
+<br>
+<h22>Использование классического внедрения</h22>
+
+<p>В этой практической работе мы собираемся получить реальное представление о том, для чего используются технологии внедрения.</p>
+<p>Нам очень хорошо знаком Youtube, но многие не знают о некоторых доступных для него средствах совместного доступа. Давайте посмотрим, как Youtube позволяет нам встраивать видео на любую страницу, которая нам нравится, используя <h10>&ltiframe></h10>.</p>
+
+<p>
+  <ul>
+    <li>Сначала перейдите на Youtube и найдите понравившееся вам видео.</li>
+    <li>Под видео вы найдете кнопку «Поделиться» - нажмите, чтобы отобразить параметры совместного доступа.
+    <li>Выберите кнопку «Вставить», и вам будет предоставлен код <h10>&ltiframe></h10> - скопируйте его.
+    <li>Вставьте его в поле ввода ниже и посмотрите на результат в <h10>Output</h10>
+  </ul>
+</p>
+
+
+<p>Дополнительно вы также можете попробовать внедрить карту Google следующим образом:</p>
+<ul>
+<li>Перейдите в Карты Google и найдите подходящую вам карту.</li>
+<li>Нажмите «Меню» (три горизонтальные линии) в верхнем левом углу пользовательского интерфейса.</li>
+<li>Выберите параметр Ссылка/код.</li>
+<li>Выберите параметр Встраивание карт, который даст вам код <h10>&ltiframe></h10> - скопируйте его.</li>
+<li>Вставьте его в поле ввода ниже и посмотрите на результат в <h10>Output</h10></li>
+</ul>
+
+
+        
+<h3>Результат</h3>
+<div class="output" style="min-height:250px; "></div>
+<h3>Редактируемый код</h3>
+<p class="a11y-label">Нажмите Esc, чтобы выйти из области кода (Tab вставляет символ табуляции).</p>
+
+<textarea id="code" class="playable-code" style="min-height: 500px; width: 85%">
+  </textarea>
+
+<div class="controls">
+  <input id="reset" type="button" value="Сбросить">
+  <input id="solution" type="button" value="Показать решение">
+</div>
+        
+        
+<script>
+var textarea = document.getElementById('code'); //возвращает ссылку на элемент по его идентификатору
+var reset = document.getElementById('reset');
+var solution = document.getElementById('solution');
+var output = document.querySelector('.output');
+var code = textarea.value;
+var userEntry = textarea.value;
+
+function updateCode() {
+  output.innerHTML = textarea.value;
+}
+
+reset.addEventListener('click', function() {
+  textarea.value = code;
+  userEntry = textarea.value;
+  solutionEntry = htmlSolution;
+  solution.value = 'Показать решение';
+  updateCode();
+});
+
+solution.addEventListener('click', function() {
+  if(solution.value === 'Показать решение') {
+    textarea.value = solutionEntry;
+    solution.value = 'Спрятать решение';
+  } else {
+    textarea.value = userEntry;
+    solution.value = 'Показать решение';
+  }
+  updateCode();
+});
+
+var htmlSolution = '<iframe width="420" height="315" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allowfullscreen>\n</iframe>\n\n<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2422.3374831755264!2d39.6147305161795!3d52.61774517983274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413a165e6d4defad%3A0x69885d77fd09d408!2z0JvQuNC_0LXRhtC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0L_QtdC00LDQs9C-0LPQuNGH0LXRgdC60LjQuSDRg9C90LjQstC10YDRgdC40YLQtdGCINC40LwuINCfLtCfLiDQodC10LzQtdC90L7QstCwLdCi0Y_QvS3QqNCw0L3RgdC60L7Qs9C-LCDQm9CT0J_Qow!5e0!3m2!1sru!2sru!4v1587998192587!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
+var solutionEntry = htmlSolution;
+
+textarea.addEventListener('input', updateCode);
+window.addEventListener('load', updateCode);
+
+// остановка табуляции клавиш из текстовой области и
+// заставить вместо этого написать вкладку в позиции каретки
+
+textarea.onkeydown = function(e){
+  if (e.keyCode === 9) {
+    e.preventDefault();
+    insertAtCaret('\t');
+  }
+
+  if (e.keyCode === 27) {
+    textarea.blur();
+  }
+};
+
+function insertAtCaret(text) {
+  var scrollPos = textarea.scrollTop;
+  var caretPos = textarea.selectionStart;
+
+  var front = (textarea.value).substring(0, caretPos);
+  var back = (textarea.value).substring(textarea.selectionEnd, textarea.value.length);
+  textarea.value = front + text + back;
+  caretPos = caretPos + text.length;
+  textarea.selectionStart = caretPos;
+  textarea.selectionEnd = caretPos;
+  textarea.focus();
+  textarea.scrollTop = scrollPos;
+}
+
+// Обновляйте сохраненный код пользователя каждый раз, когда пользователь обновляет код области текста
+
+textarea.onkeyup = function(){
+  // Мы хотим сохранить состояние только тогда, когда отображается код пользователя
+  //не решение, поэтому решение не сохраняется поверх кода пользователя
+  if(solution.value === 'Показать решение') {
+    userEntry = textarea.value;
+  } else {
+    solutionEntry = textarea.value;
+  }
+
+  updateCode();
+};
+</script>
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- &lt ДЛЯ ОТОБРАЖЕНИЯ ТЕГОВ  -->
+    
+  </main>
+      <!--Подвал сайта-->
+<footer>
+  <nav1>
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+          <a href="2.html">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+        
+        
+        <a href="dopinfo.html">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+        <a href="">КОНТАКТЫ</a>
+        <a href="O_kyrse.html">О КУРСЕ</a>
+        
+  </nav1>
+
+  <!--Лого в подвале сайта для мобильной версии-->
+<div class="logofooter">
+    <a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png"></a>
+  </div>
+<!-- завершение лого в подвале сайта для мобильной версии-->
+
+  <div class="logofooter">
+    <a href="index.html"><img class="graficlogo" src="assets/img/internet1.png"></a>
+  </div>
+<div class="social">
+  <a href="#"><img src="assets/img/em.png" alt=""></a>
+  <a href="#"><img src="assets/img/face.png" alt=""></a>
+  <a href="#"><img src="assets/img/goo.png" alt=""></a>
+  <a href="#"><img src="assets/img/inst.png" alt=""></a>
+</div>
+
+
+
+ <div class="Copyright">
+ Copyright &copy; Alexey Terletsky 2020  Все права защищены
+ </div>
+</footer>
+
+
+  
+</body>
+
+
+
+
+<!--Кнопка наверх-->
+<div id="upbutton"></div>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 30) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 200);
+    });
+</script>
+
+
+<style>
+  #upbutton {
+    background: url("assets/img/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+<!--конец  Кнопка наверх-->
+
+</html>

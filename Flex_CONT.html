@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex-контейнер</title>
+	<link rel="stylesheet" href="assets/css/style.css">	
+<link rel="icon" href="assets/img/internetFAV.png" type="image/x-icon">     <!--Фавикон-->
+	<!--<link rel="stylesheet" href="assets/css/@media.css">	-->
+							<!--подключаем СSS файл-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--подключаем Шрифт-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/scripts.js"></script>-->
+	<script type="text/javascript" src="assets/js/script.js"></script>	
+										<!--подключаем джава файл-->
+	<script src="https://code.jquery.com/jquery-git.min.js"></script>	<!--подключаем библиотеку jsquary-->
+</head>
+<body>
+				<!--Голова сайта-->
+	<header>
+		<!--Логотип для мобильной версии-->
+		<div class="logo1">
+			<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png" alt="logo1"></a>  							<!--Логотип-->
+		</div>
+
+
+		
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png" alt="logo"></a>  							<!--Логотип-->
+		</div>
+		<!--выпадающее меню-->
+<nav>
+	<a id="menu" href="#" class="icon">&#9776;</a>	
+	<ul class="topmenu" id="myTopnav">
+	<li><a href="index.html" >ГЛАВНАЯ</a></li>
+	<li><a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+		<ul class="submenu">
+			<li><a href="Ssilka.html"> 1.Формирование контента и гиперссылки</a></li>
+			<li><a href="GraficaHTML.html">2.Графика в HTML</a></li>
+			<li><a href="Object.html">3.Вставка объектов</a></li>
+			<li><a href="tablCss.html">4.Таблицы стилей</a></li>
+			<li><a href="blochi.html">5.Блочная верстка</a></li>
+			<li><a href="Multimedia.html">6.Элементы мультимедиа</a></li>
+		</ul></li>
+		<li><a href="2.html"class="button">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+			<ul class="submenu">
+				<li><a href="1.OsnPon.html">1.Основные понятия Flex-технологий</a></li>
+				<li><a href="Flex_CONT.html">2.Flex-контейнер</a></li>
+				<li><a href="Flex_justify.html">3.Flex-элементы</a></li>
+				
+				<li><a href="Flex_Order.html">4.Порядок отображения flex-элементов и ориентация</a></li>
+			
+				
+				<li><a href="Flexibility.html">5.Гибкость flex-элементов</a></li>
+				<li><a href="Justify.html">6.Выравнивание</a></li>
+
+					</ul></li>
+					<li><a href="Praktika.html"class="button">ПРАКТИЧЕСКИЕ РАБОТЫ</a>
+					<ul class="submenu2">
+						<li><a href="Lab1.html">Практическая работа №1</a></li>
+						<li><a href="Lab2.html">Практическая работа №2</a></li>
+					<li><a href="Lab3.html">Практическая работа №3</a></li>
+				<li><a href="Lab4.html">Практическая работа №4</a></li>
+			<li><a href="Lab5.html">Практическая работа №5</a></li></ul></li>
+		<li><a href="dopinfo.html"class="button">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+			<ul class="submenu2">
+				<li><a href="HTML.html"class="button">Начало работы с HTML </a></li></li>
+				<li><a href="Color.html"class="button">Цвет в web</a>
+				
+				<li><a href="GIF.html"class="button">FlexBox визуализация через GIF</a></li></ul></li>
+			<li><a href="Contacts.html"class="button">КОНТАКТЫ</a></li>
+			<li><a href="O_kyrse.html"class="button">О КУРСЕ </a></li>
+
+	</ul>
+
+</nav>
+
+	<img src="assets/img/unnamed.jpg" alt="" class="mw-100">
+	<img src="assets/img/unnamedmob.jpg" alt="" class="mw-1001">
+	
+
+	</header>
+
+
+<!--конец Кнопка наверх-->
+																	<!--ОСНОВНАЯ ЧАСТЬ САЙТА-->
+
+	<main>
+		<br>
+
+<h3>Flex-контейнер</h3>
+
+<p>Область документа, использующая flexbox, называется flex-контейнером. Чтобы создать flex-контейнер, мы задаем значение <h10>flex </h10>или <h10>inline-flex</h10> для свойства <h10>display</h10> контейнера. Как только мы делаем это, прямые потомки этого контейнера становятся flex-элементами. Как и для всех свойств в CSS, некоторые начальные значения уже определены, поэтому при создании flex-контейнера все содержащиеся в нем flex-элементы будут вести себя следующим образом.</p>
+<ul>
+	<li>Элементы отображаются в ряд (свойство <h10>flex-direction</h10> по умолчанию имеет значение row).</li>
+	<li>Позиционирование элементов начинается от начала главной оси.</li>
+	<li>Элементы не растягиваются по основной оси, но могут сжиматься.</li>
+	<li>Элементы будут растягиваться, чтобы заполнить размер побочной оси.</li>
+	<li>Свойству <h10>flex-basis</h10> задано значение <h10>auto</h10>.</li>
+	<li>Свойству <h10>flex-wrap</h10> задано значение <h10>nowrap</h10>.</li>
+</ul>
+
+<p>
+	Результатом этого является то, что все ваши элементы будут выстроены в ряд, используя размер содержимого в качестве их размера на главной оси. Если в контейнере больше элементов, чем можно уместить, они не будут обернуты и контейнер будет переполнен. Если некоторые элементы выше других, все элементы будут вытянуты вдоль побочной оси, чтобы заполнить ось в полный размер.
+</p>
+<p>
+	Вы можете увидеть принцип работы в живом примере ниже. Попробуйте отредактировать или добавить дополнительные элементы, чтобы проверить поведение flexbox.
+</p>
+
+<h3>Активное изучение</h3>
+<iframe class="live-sample-frame" frameborder="0" height="800px" src="assets/img/Flexbox Basics_ The Flex Container.html" width="80%"></iframe>
+		
+<h3>Изменение <h10>flex-direction</h10></h3>
+<p>Добавление свойства <h10>flex-direction</h10> в контейнер позволяет нам изменять направление, в котором отображаются наши элементы flex. Установка <h10>flex-direction: row-reverse</h10> сохранит порядок отображаения элементов вдоль строки, однако начало и конец строки поменяются местами.</p>
+
+<p>Если изменить значение свойства <h10>flex-direction</h10> на <h10>column</h10>, главная ось изменится, и наши элементы будут отображаются в столбец. При установке параметра <h10>column-reverse</h10>, начало и конец стобца поменяются местами.</p>
+
+<p>В приведенном ниже примере значение свойства <h10>flex-direction</h10> установлено как <h10>row-reverse</h10>. Попробуйте другие значения — <h10>row, column</h10> и <h10>column-reverse,</h10> чтобы посмотреть как изменятся элементы контейнера.</p>
+<h3>Активное изучение</h3>
+<iframe class="live-sample-frame" frameborder="0" height="550px" src="assets/img/Flexbox Basics_ The flex-direction property.html" width="80%"></iframe>
+
+<h3>Многострочный flex-контейнер с <h10>flex-wrap</h10></h3>
+<p>Несмотря на то, что flexbox — это однонаправленная модель, есть возможность завернуть flex-элементы в несколько строк. При этом вы должны рассматривать каждую строку как новый flex-контейнер. Распределение пространства будет происходить на этой конкретной линии, не привязываясь к соседним линиям.</p>
+
+<p>Чтобы включить такое поведение, добавьте параметр <h10>flex-wrap</h10> со значением <h10>wrap</h10>. Теперь, как только ваши элементы будут слишком большими для того, чтобы влезать на одну строчку, они будут переноситься на новые строки. Пример ниже содержит широкие элементы, у которых общая ширина больше, чем размер контейнера. Так как параметр <h10>flex-wrap</h10> установлен в значение <h10>wrap</h10>, элементы переносятся. Если Вы установите значение <h10>nowrap</h10>, то есть в начальное значение, то элементы сожмутся так, чтобы все элементы поместились на одной строке, потому что у них установлено значение, позволяющее им сжиматься при необходимости. Если им запретить сжиматься, или если они не смогут сблизиться достаточно сильно, то при установленном значении <h10>nowrap</h10> будет происходить переполнение контейнера.</p>
+
+<h3>Активное изучение</h3>
+<iframe class="live-sample-frame" frameborder="0" height="600px" src="assets/img/Flexbox Basics_ The flex-wrap property.html" width="80%"></iframe>
+
+<h3>Краткая запись направления и многострочности: <h10>flex-flow</h10></h3>
+
+<p>Вы можете указать два свойства <h10>flex-direction</h10> и <h10>flex-wrap</h10> в одном <h10>flex-flow</h10>. Первое значение свойства определяет <h10>flex-direction</h10>, второе <h10>flex-wrap</h10>.</p>
+
+<p>В приведенном ниже примере вы можете изменить первое значение на одно из доступных для <h10>flex-direction - row</h10>, <h10>row-reverse</h10>,<h10> column or column-reverse</h10>, а второе на <h10>wrap</h10> или <h10>nowrap</h10>, чтобы посмотреть как изменятся элементы контейнера.</p>
+<h3>Активное изучение</h3>
+<iframe class="live-sample-frame" frameborder="0" height="600px" src="assets/img/Flexbox Basics_ flex-flow.html" width="80%"></iframe>
+
+
+
+	</main>
+			<!--Подвал сайта-->
+<footer>
+	<nav1>
+				<a href="index.html">ГЛАВНАЯ</a>
+				<a href="osnKyrs.html">ВВОДНАЯ ЧАСТЬ КУРСА</a>
+					<a href="2.html">ОСНОВНАЯ ЧАСТЬ КУРСА</a>
+				
+				
+				<a href="dopinfo.html">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+				<a href="">КОНТАКТЫ</a>
+				<a href="O_kyrse.html">О КУРСЕ</a>
+				
+	</nav1>
+
+	<!--Лого в подвале сайта для мобильной версии-->
+<div class="logofooter">
+		<a href="index.html"><img class="graficlogo1" src="assets/img/internet1(mobil).png"></a>
+	</div>
+<!-- завершение лого в подвале сайта для мобильной версии-->
+
+	<div class="logofooter">
+		<a href="index.html"><img class="graficlogo" src="assets/img/internet1.png"></a>
+	</div>
+<div class="social">
+	<a href="#"><img src="assets/img/em.png" alt=""></a>
+	<a href="#"><img src="assets/img/face.png" alt=""></a>
+	<a href="#"><img src="assets/img/goo.png" alt=""></a>
+	<a href="#"><img src="assets/img/inst.png" alt=""></a>
+</div>
+
+ <div class="Copyright">
+ Copyright &copy; Alexey Terletsky 2020  Все права защищены
+ </div>
+</footer>
+
+
+	
+</body>
+
+
+
+
+<!--Кнопка наверх-->
+<div id="upbutton"></div>
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 30) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 200);
+    });
+</script>
+
+
+<style>
+  #upbutton {
+    background: url("assets/img/up.png") no-repeat top left;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+<!--конец  Кнопка наверх-->
+
+</html>
