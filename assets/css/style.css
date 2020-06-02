@@ -1414,7 +1414,7 @@ main >h3 {
 ul{
 	font-size: 200%;
 	text-align: justify;
-	margin: 50px;
+	margin: 0px;
 }
 .mw-100{
 margin:3% auto 0 0;								/*отступ картинки в мобильной версии*/
@@ -1487,7 +1487,7 @@ object-fit: scale-down;
 .advantages_item1{
 	display:block;
 	position: relative;
-	left: 300px;  
+	left: 230px;  
 	width: 30%;
 	text-align: center;
 }
